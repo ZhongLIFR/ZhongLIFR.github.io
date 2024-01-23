@@ -6,7 +6,8 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-"I cherish the moments spent in various universities and companies. I am deeply grateful for every individual who has been a part of my journey."
+I cherish the moments spent in various universities and companies. I am deeply grateful for every individual who has been a part of my journey.
+
 {% include base_path %}
 
 Education
