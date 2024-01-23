@@ -4,7 +4,7 @@ collection: teaching
 type: "Advances in Data Mining (Graduate Course)"
 permalink: /teaching/2014-spring-teaching-1
 venue: "Leiden University, LIACS"
-date: 2021 Fall, 2022 Fall, 2023 Fall
+date: 2023-09-01
 location: "Leiden, The Netherlands"
 ---
 
