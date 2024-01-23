@@ -17,7 +17,7 @@ I am interested in the field of Data Mining and Machine Learning. During my PhD,
 
 Recent News
 ======
-- lalalalal
+- [Position-Filled]: I am looking for a Master student to do an internship&master thesis, which will be in collaboration with <span style="color:blue">VDL & ASML</span>. The thesis proposal is "Predictive Maintenance of Lithography System Using Log Anomaly Detection". (June 2023)
 
 
 Contact
