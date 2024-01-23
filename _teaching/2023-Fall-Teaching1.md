@@ -7,5 +7,3 @@ venue: "Leiden University, LIACS"
 date: 2023-09-01
 location: "Leiden, The Netherlands"
 ---
-
-During the course we will cover the most popular algorithms for common data mining tasks: data visualization (PCA, MDS, LLE, t-SNE); classification and regression (RandomForest; XGBoost; SVMs), anomaly detection (LOF, IsolationForest, GenerativeModels, etc); recommender systems (Matrix Factorization) and others. Additionally, we will discuss recent developments in automatic tuning of ML algorithms and mining very big data on distributed systems (Hadoop, Spark) and mining data streams. Additionally, we will discuss in-depth the Kaggle platform as a great source of knowlege and inspiration for future Data Scientists.
