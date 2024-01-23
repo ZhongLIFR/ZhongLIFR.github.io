@@ -10,12 +10,22 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 -> * indicates equal contribution
 
 ## 2024
-
+- **Cross-Domain Graph Level Anomaly Detection.**
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. ICDE'24 under review.
+    
+- **Graph Neural Networks based Log Anomaly Detection and Explanation.**
+  - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
+  - [[paper]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph)
+  - the full version will be submitted to a journal, and we are testing this algorithm on ASML's lithography machines
 
 ## 2023
+- **A Survey on Explainable Anomaly Detection.**
+  - **Zhong Li**, Yuxuan Zhu, Matthijs van Leeuwen.  Data Mining and Knowledge Discovery (DAMI). 37: 2517–2563.
+  - [[paper]](https://dl.acm.org/doi/10.1145/3609333)
+    
 - **Explainable Contextual Anomaly Detection using Quantile Regression Forests.**
   - **Zhong Li**, Matthijs van Leeuwen.  Data Mining and Knowledge Discovery (DAMI). 37: 2517–2563.
-  - [[paper]](https://link.springer.com/article/10.1007/s10618-023-00967-z)[[code]](https://github.com/ZhongLIFR/QCAD)
+  - [[paper]](https://link.springer.com/article/10.1007/s10618-023-00967-z), [[code]](https://github.com/ZhongLIFR/QCAD)
 
 ## 2022
 - **Feature Selection for Fault Detection and Prediction based on Log Analysis.**
