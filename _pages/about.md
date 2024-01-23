@@ -12,8 +12,7 @@ My name is Zhong Li, and I am a final-year Ph.D. candidate in Computer Science a
 
 Research Interest
 ======
-I am interested in the field of Data Mining and Machine Learning. During my PhD, I work on trustworthy anomaly detection, with a focus on but not limited to complex data such as event sequence and graph-structured data for smart manufacturing. More concretely, I aim to improve the **accuracy** (with high-dimensional, unstructured and/or multimodal data), [Uploading about.md…]()
-**explainability** and **generalizability** (when facing high sensitivity to data distribution shifts, Hyperarameter tuning, and/or adversarial input perturbations) of anomaly detection methods.
+I am interested in the field of Data Mining and Machine Learning. During my PhD, I work on trustworthy anomaly detection, with a focus on but not limited to complex data such as event sequence and graph-structured data for smart manufacturing. More concretely, I aim to improve the **accuracy** (with high-dimensional, unstructured and/or multimodal data), **explainability** and **generalizability** (when facing high sensitivity to data distribution shifts, Hyperarameter tuning, and/or adversarial input perturbations) of anomaly detection methods.
 
 Research Keywords 
 ======
