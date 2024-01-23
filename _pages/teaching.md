@@ -11,18 +11,23 @@ redirect_from:
 
 Teaching Assistant of the following Courses
 ======
-* PhD student in Computer Science, [Leiden University](https://www.universiteitleiden.nl/en), Leiden, the Netherlands, 2020.11 - Present
-* Diplôme d'Ingénieur in Data Science, [ENSAI](https://ensai.fr/en/), Rennes, France. 2017.09 - 2019.10
-* M.S. in Mathematics, [Tongji University](https://en.tongji.edu.cn/p/#/), Shanghai, China. 2016.09 - 2020.03
-* B.S. in Statistics, [Tongji University](https://en.tongji.edu.cn/p/#/), Shanghai, China. 2012.09 - 2016.07
+* Leiden University
+  * Fall 2023: Advances in Data Mining (AIDM) (Teachers: Dr. W.J. Kowalczyk and Prof. Dr. A.J. Knobbe)
+  * Fall 2022: Advances in Data Mining (AIDM) (Teacher: Dr. W.J. Kowalczyk)
+  * Fall 2021: Advances in Data Mining (AIDM) (Teacher: Dr. W.J. Kowalczyk)
+    
+* Tongji University
+  * Spring 2017: Statistics (Teacher: Prof. Zhijian Qian)
+  * Fall 2016: Probability Theory and Mathematical Statistics  (Teacher: Prof. Sili Niu)
 
 Co-supervisor of the following students
 ======
-* March. 2020 - October. 2020: Advanced Data Analyst
-  * Shanghai Micro Electronics Equipment (Group) Co., Ltd. (SMEE)
-  * Shanghai, China
+* Master Students
+  * Yuhang Wang: Unsupervised Model Selection for Graph Representation Learning, December 2023 - July 2024 (Expected), Leiden University
+  * Timo Vos: Predictive Maintenance of Lithography System Using Log Anomaly Detection, December 2023 - July 2024 (Expected), Leiden University (collaborated  with VDL-ETG and ASML)
+  * Yuxuan Zhu: Data-driven inkjet jet failure detection and classification using piezo self-sensing, July 2022 - March 2023 , Leiden University (collaborated  with Canon Production Printing)
 
-* March. 2019 - September. 2019: Data Scientist Intern
-  * HSBC
-  * Paris, France
+* Bachelor Students
+  * Samuel Smulders: Automated feature selection for unsupervised anomaly detection with internal evaluation strategies, February 2023 - July 2023, Leiden University
+  * Milan Luijken: The effects of feature selection on anomaly detection, March 2022 - December 2022, Leiden University
     
