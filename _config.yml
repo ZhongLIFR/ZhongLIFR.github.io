@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Zhong Li"
   avatar           : "profile2019.png"
-  bio              : "PhD candidate at Leiden University"
+  bio              : "PhD Candidate"
   location         : "Leiden, the Netherlands"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/ZhongLIFR/"
+  github           : "ZhongLIFR"
   google_plus      :
   keybase          :
   instagram        :
