@@ -7,7 +7,6 @@ author_profile: true
 
 You can also find my articles on <u><a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&hl=en&oi=ao">my Google Scholar</a>.</u>
 
--> * indicates equal contribution
 
 ## 2024
 - **Cross-Domain Graph Level Anomaly Detection.**
@@ -20,7 +19,7 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 
 ## 2023
 - **A Survey on Explainable Anomaly Detection.**
-  - **Zhong Li**, Yuxuan Zhu, Matthijs van Leeuwen.  Data Mining and Knowledge Discovery (DAMI). 37: 2517–2563.
+  - **Zhong Li**, Yuxuan Zhu, Matthijs van Leeuwen. ACM Transactions on Knowledge Discovery from Data (TKDD). 23: 1–54.
   - [[paper]](https://dl.acm.org/doi/10.1145/3609333)
     
 - **Explainable Contextual Anomaly Detection using Quantile Regression Forests.**
