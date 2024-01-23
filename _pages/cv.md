@@ -29,8 +29,8 @@ Work experience
 
 Skills
 ======
-* Basic language: Python, R, SAS
-* Latex
+* Programming language: Python, R, SAS, Latex
+* Human language: Chinese (C2), English (C1-C2), French (B2-C1), Dutch (A2-B1)   
 
 <!--
 Publications
