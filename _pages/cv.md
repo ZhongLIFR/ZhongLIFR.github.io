@@ -18,7 +18,7 @@ Education
 * M.S. in Mathematics, [Tongji University](https://en.tongji.edu.cn/p/#/), Shanghai, China. 2016.09 - 2020.03
   * Double Degree
 * B.S. in Statistics, [Tongji University](https://en.tongji.edu.cn/p/#/), Shanghai, China. 2012.09 - 2016.07
-  * Graduating With Honors, top 5%
+  * Graduating with Honors (top 5%)
 
 Work experience
 ======
