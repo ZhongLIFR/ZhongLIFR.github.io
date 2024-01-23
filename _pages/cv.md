@@ -11,10 +11,10 @@ redirect_from:
 
 Education
 ======
-* PhD student in Computer Science, [Leiden University](https://www.universiteitleiden.nl/en), Leiden, the Netherlands 2020.11 - Present
-* Diplôme d'Ingénieur in Data Science, ENSAI, Rennes, France 2017.09 - 2019.10
-* M.S. in Mathematics, Tongji University, Shanghai, China 2016.09 - 2020.03
-* B.S. in Statistics, Tongji University, Shanghai, China 2012.09 - 2016.07
+* PhD student in Computer Science, [Leiden University](https://www.universiteitleiden.nl/en), Leiden, the Netherlands, 2020.11 - Present
+* Diplôme d'Ingénieur in Data Science, ENSAI, Rennes, France, 2017.09 - 2019.10
+* M.S. in Mathematics, Tongji University, Shanghai, China, 2016.09 - 2020.03
+* B.S. in Statistics, Tongji University, Shanghai, China, 2012.09 - 2016.07
 
 Work experience
 ======
