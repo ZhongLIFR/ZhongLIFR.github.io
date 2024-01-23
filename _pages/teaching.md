@@ -6,6 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+I have been serving as a teaching assistant and co-supervisor for students' theses. Please drop me an email if you have any questions regarding the courses or theses.
 
 {% include base_path %}
 
