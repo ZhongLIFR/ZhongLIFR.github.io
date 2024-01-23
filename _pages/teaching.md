@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV"
-permalink: cv/
+title: "Teaching & Supervision"
+permalink: teaching/
 author_profile: true
 redirect_from:
   - /resume
