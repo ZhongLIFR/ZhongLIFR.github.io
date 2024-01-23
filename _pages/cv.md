@@ -23,12 +23,10 @@ Education
 Work experience
 ======
 * March. 2020 - October. 2020: Advanced Data Analyst
-  * Shanghai Micro Electronics Equipment (Group) Co., Ltd. (SMEE)
-  * Shanghai, China
+  * Shanghai Micro Electronics Equipment Group (SMEE), Shanghai, China
 
 * March. 2019 - September. 2019: Data Scientist Intern
-  * HSBC
-  * Paris, France
+  * HSBC, Paris, France
     
 Professional Services
 ======
