@@ -10,11 +10,14 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 - Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
 
 ## 2024
+- **Automated Feature Selection for Anomaly Detection.**
+  - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
+    
 - **Automated Self-Supervised Learning for Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. under review.
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review.
     
 - **Cross-Domain Graph Level Anomaly Detection.**
-  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. ICDE'24 under review.
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. ICDE'24 Under Review.
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
