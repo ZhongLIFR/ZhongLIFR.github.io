@@ -5,8 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
-You can also find my articles on <u><a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&hl=en&oi=ao">my Google Scholar</a>.</u>
-
+You can also find my articles on my <u><a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&hl=en&oi=ao">Google Scholar</a>.</u>. My reserach can be summarised by the following keywords:
+- Methodologies-Oriented: *Unsupervised Machine Learning; Anomaly Detection; Transfer Learning; XAI; Graph Neural Networks*
+- Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
 
 ## 2024
 - **Cross-Domain Graph Level Anomaly Detection.**
