@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 2"
+title: "Teaching Assistant"
 collection: teaching
-type: "Workshop"
+type: "Advance in Data Mining (Master Course)"
 permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+venue: "Leiden University, LIACS"
+date: 2021-09-01
+location: "Leiden, the Netherlands"
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.
