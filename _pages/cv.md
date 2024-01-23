@@ -21,10 +21,6 @@ Work experience
 * March. 2020 - October. 2020: Advanced Data Analyst
   * [SMEE]
 
-* Sep 2018 - Sep 2020 : Student Life Advisor
-  * [Renmin University of China](https://ruc.edu.cn/)
-  * Duties included: Help freshman get familiar with life and courses about university.
-  * Supervisor: Prof. [Jing Zhang](https://xiaojingzi.github.io/)
 
 Skills
 ======
