@@ -13,6 +13,9 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 
 
 ## 2023
+- **Explainable Contextual Anomaly Detection using Quantile Regression Forests.**
+  - **Zhong Li**, Matthijs van Leeuwen.  Data Mining and Knowledge Discovery (DAMI). 37: 2517–2563.
+  - [[paper]](https://link.springer.com/article/10.1007/s10618-023-00967-z)[[code]](https://github.com/ZhongLIFR/QCAD)
 
 ## 2022
 - **Feature Selection for Fault Detection and Prediction based on Log Analysis.**
