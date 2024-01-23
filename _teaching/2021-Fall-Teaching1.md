@@ -1,21 +1,10 @@
 ---
 title: "Teaching Assistant"
 collection: teaching
-type: "Advance in Data Mining (Master Course)"
+type: "Advance in Data Mining (Graduate Course)"
 permalink: /teaching/2015-spring-teaching-1
 venue: "Leiden University, LIACS"
 date: 2021-09-01
 location: "Leiden, the Netherlands"
 ---
-
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
 
