@@ -25,9 +25,9 @@ Co-supervisor of the following students
 * Master Students
   * Yuhang Wang: Unsupervised Model Selection for Graph Representation Learning, December 2023 - July 2024 (Expected), Leiden University
   * Timo Vos: Predictive Maintenance of Lithography System Using Log Anomaly Detection, December 2023 - July 2024 (Expected), Leiden University (collaborated  with VDL-ETG and ASML)
-  * Yuxuan Zhu: Data-driven inkjet jet failure detection and classification using piezo self-sensing, July 2022 - March 2023 , Leiden University (collaborated  with Canon Production Printing)
+  * [Yuxuan Zhu](https://scholar.google.com/citations?user=qmZnKSYAAAAJ&hl=en): Data-driven inkjet jet failure detection and classification using piezo self-sensing, July 2022 - March 2023 , Leiden University (collaborated  with Canon Production Printing)
 
 * Bachelor Students
   * Samuel Smulders: Automated feature selection for unsupervised anomaly detection with internal evaluation strategies, February 2023 - July 2023, Leiden University
-  * Milan Luijken: The effects of feature selection on anomaly detection, March 2022 - December 2022, Leiden University
+  * [Milan Luijken](https://nl.linkedin.com/in/milan-luijken): The effects of feature selection on anomaly detection, March 2022 - December 2022, Leiden University
     
