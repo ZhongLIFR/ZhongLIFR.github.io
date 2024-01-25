@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Zhong Li, and I am a final-year Ph.D. candidate in Computer Science at Leiden University, affiliated with the [EDA Lab](eda.liacs.nl). I am fortunate  to be supervised  by Dr. [Matthijs van Leeuwen](https://scholar.google.com/citations?user=GGLwU28AAAAJ&hl=en&oi=ao) (daily supervisor, promotor) and Prof. Dr. [Thomas Bäck](https://scholar.google.com/citations?hl=en&user=x7LEID0AAAAJ) (promotor).
+My name is Zhong Li, and I am a final-year Ph.D. candidate in Computer Science at Leiden University, affiliated with the [EDA Lab](https://eda.liacs.nl/). I am fortunate  to be supervised  by Dr. [Matthijs van Leeuwen](https://scholar.google.com/citations?user=GGLwU28AAAAJ&hl=en&oi=ao) (daily supervisor, promotor) and Prof. Dr. [Thomas Bäck](https://scholar.google.com/citations?hl=en&user=x7LEID0AAAAJ) (promotor).
 
 Research Interest
 ======
