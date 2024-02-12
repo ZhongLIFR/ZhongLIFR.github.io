@@ -17,12 +17,12 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review.
     
 - **Cross-Domain Graph Level Anomaly Detection.**
-  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. ICDE'24 Under Review.
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. Under Review.
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
   - [[paper]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph)
-  - the full version will be submitted to a journal, and we are testing this algorithm on ASML's lithography machines
+  - the full version has been submitted to the EAAI journal, and we are testing this algorithm on ASML's lithography machines
 
 ## 2023
 - **A Survey on Explainable Anomaly Detection.**
