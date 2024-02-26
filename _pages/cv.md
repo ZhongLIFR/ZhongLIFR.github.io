@@ -22,7 +22,7 @@ Education
 
 Work experience
 ======
-* March. 2020 - October. 2020: Advanced Data Analyst
+* March. 2020 - October. 2020: Data Scientist
   * Shanghai Micro Electronics Equipment Group (SMEE), Shanghai, China
 
 * March. 2019 - September. 2019: Data Scientist Intern
@@ -31,6 +31,7 @@ Work experience
 Professional Services
 ======
 * Invited Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE)
+* Reviewer for KDD conference
 
 
 Skills
