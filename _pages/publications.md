@@ -13,7 +13,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 - **Automated Feature Selection for Anomaly Detection.**
   - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
  
-- **Adversarial Attacks on Graph Explanations**
+- **Adversarial Attacks on Graph Explanations.**
   - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for a ML Conference .
     
 - **Automated Self-Supervised Learning for Graph Anomaly Detection.**
