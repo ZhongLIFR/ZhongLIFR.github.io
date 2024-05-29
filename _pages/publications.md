@@ -12,16 +12,20 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 ## 2024
 - **Automated Feature Selection for Anomaly Detection.**
   - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
+ 
+- **Adversarial Attacks on Graph Explanations**
+  - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for a ML Conference .
     
-- **Automated Self-Supervised Learning for Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review.
+- **Automated Self-Supervised Learning for Graph Anomaly Detection.**
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review for DAMI.
     
 - **Cross-Domain Graph Level Anomaly Detection.**
-  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. Under Review.
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. Under Review for TKDE.
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
-  - [[paper]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph)
+  - [[paper (full version)]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph)
+  - [[paper (short version published)]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084)
   - the full version has been submitted to the EAAI journal, and we are testing this algorithm on ASML's lithography machines
 
 ## 2023
