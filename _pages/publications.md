@@ -24,8 +24,8 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
-  - [[paper (full version)]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph)
-  - [[paper (short version published)]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084)
+  - [[paper (ArXiv full version)]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph)
+  - [[paper (ICSE short version)]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084)
   - the full version has been submitted to the EAAI journal, and we are testing this algorithm on ASML's lithography machines
 
 ## 2023
