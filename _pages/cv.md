@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-I cherish the moments spent in various universities and companies. I am deeply grateful for every individual who has been a part of my journey.
+I cherish every moment that I spent in different universities and companies. I am deeply grateful for every person who has been a part of my life.
 
 {% include base_path %}
 
@@ -30,7 +30,7 @@ Work experience
     
 Professional Services
 ======
-* Invited Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE)
+* Invited Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE), Data Mining and Knowledge Discovery (DMKD or DAMI), and AI Communications.
 * Reviewer for KDD conference
 
 
