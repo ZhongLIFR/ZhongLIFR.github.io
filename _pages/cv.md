@@ -30,8 +30,12 @@ Work experience
     
 Professional Services
 ======
-* Invited Reviewer for IEEE Transactions on Knowledge and Data Engineering (TKDE), Data Mining and Knowledge Discovery (DMKD or DAMI), and AI Communications.
-* Reviewer for KDD conference
+* Invited Reviewer for the Following Journals:
+  * IEEE Transactions on Knowledge and Data Engineering (TKDE)
+  * Data Mining and Knowledge Discovery (DMKD or DAMI)
+  * AI Communications
+* Reviewer for the Following Journals:
+  * KDD conference
 
 
 Skills
