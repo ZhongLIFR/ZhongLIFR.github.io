@@ -39,6 +39,6 @@ Professional Services
 
 Contact
 ======
-Office 169, Niels Bohrweg 1, 2333CA, Leiden, The Netherlands
+Office BM 214, Gorlaeus Building, Einsteinweg 55, 2333 CC Leiden, The Netherlands
 
-Email: z.li@liacs.leidenuniv.nl
+Email: z.li(at)liacs.leidenuniv.nl
