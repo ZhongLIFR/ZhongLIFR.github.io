@@ -28,15 +28,6 @@ Work experience
 * March. 2019 - September. 2019: Data Scientist Intern
   * HSBC, Paris, France
     
-Professional Services
-======
-* Invited Reviewer for the Following Journals:
-  * IEEE Transactions on Knowledge and Data Engineering (TKDE)
-  * Data Mining and Knowledge Discovery (DMKD or DAMI)
-  * AI Communications
-* Reviewer for the Following Journals:
-  * KDD conference
-
 
 Skills
 ======
