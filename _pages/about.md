@@ -27,6 +27,15 @@ Recent News
 - <span style="color:red">[~~Position-Cancelled~~]</span>: I am looking for a Master student to do an internship&master thesis, which will be in collaboration with <span style="color:blue">Canon</span>. The thesis proposal is "Knowledge-based & Data-driven Inkjet Jet Failure Detection and Classification".  (October 2023)
 - <span style="color:red">[~~Position-Filled~~]</span>: I am looking for a Master student to do an internship&master thesis, which will be in collaboration with <span style="color:blue">VDL & ASML</span>. The thesis proposal is "Predictive Maintenance of Lithography System Using Log Anomaly Detection". (June 2023)
 
+Professional Services
+======
+* Invited Reviewer for the Following Journals:
+  * IEEE Transactions on Knowledge and Data Engineering (TKDE)
+  * Data Mining and Knowledge Discovery (DMKD or DAMI)
+  * IEEE Internet of Things Journal (IoT)
+  * AI Communications
+* Reviewer for the Following Conference:
+  * KDD conference
 
 Contact
 ======
