@@ -20,7 +20,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review for DAMI.
     
 - **Cross-Domain Graph Level Anomaly Detection.**
-  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering.
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE).
   - [[paper]](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69)(To appear), [[code]](https://github.com/ZhongLIFR/ARMET/)
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
