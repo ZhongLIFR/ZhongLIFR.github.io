@@ -21,7 +21,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
     
 - **Cross-Domain Graph Level Anomaly Detection.**
   - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering.
-  - [[paper (To appear)]](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69), [[code]](https://github.com/ZhongLIFR/ARMET/)
+  - [[paper]](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69)(To appear), [[code]](https://github.com/ZhongLIFR/ARMET/)
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
