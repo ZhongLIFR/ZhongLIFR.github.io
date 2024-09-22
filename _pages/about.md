@@ -20,7 +20,7 @@ More concretely, I aim to improve the **accuracy** (namely make anomaly detectio
 
 Recent News
 ======
-- 2024.09: 🔥🔥 Our paper titled Cross-domain Graph Level Anomaly Detection is accepted by TKDE for publication!
+- 2024.09: 🔥🔥 Our paper titled [Cross-domain Graph Level Anomaly Detection](https://ieeexplore.ieee.org/document/10684507/keywords#keywords) is accepted by TKDE for publication!
 - 2024.01: 🔥🔥 Our paper titled [Graph Neural Networks based Log Anomaly Detection and Explanation](https://arxiv.org/abs/2307.00527) is accepted by ICSE'24 poster track! 
 - 2023.07: 🔥🔥 Our paper titled [A survey on explainable anomaly detection](https://dl.acm.org/doi/full/10.1145/3609333) is accepted by TKDD for publication!
 - 2023.07: 🔥🔥 Our paper titled [Explainable Contextual Anomaly Detection using Quantile Regression Forests](https://link.springer.com/article/10.1007/s10618-023-00967-z) is accepted by DAMI for publication!
