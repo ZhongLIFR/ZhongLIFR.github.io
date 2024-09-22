@@ -25,6 +25,7 @@ Recent News
 - 2023.07: 🔥🔥 Our paper titled [A survey on explainable anomaly detection](https://dl.acm.org/doi/full/10.1145/3609333) is accepted by TKDD for publication!
 - 2023.07: 🔥🔥 Our paper titled [Explainable Contextual Anomaly Detection using Quantile Regression Forests](https://link.springer.com/article/10.1007/s10618-023-00967-z) is accepted by DAMI for publication!
 - 2022.12: 🔥🔥 Our paper titled [Feature Selection for Fault Detection and Prediction based on Event Log Analysis](https://dl.acm.org/doi/abs/10.1145/3575637.3575652) is accepted by SIGKDD Explorations for publication!
+- 2021.10: 🔥🔥 Our paper titled [Choosing and changing the analysis scale in non-inferiority trials with a binary outcome](https://pubmed.ncbi.nlm.nih.gov/34693789/) is accepted by Clinical Trials for publication!
 - <span style="color:red">[~~Position-Cancelled~~]</span>: I am looking for a Master student to do an internship&master thesis, which will be in collaboration with <span style="color:blue">Canon</span>. The thesis proposal is "Knowledge-based & Data-driven Inkjet Jet Failure Detection and Classification".  (October 2023)
 - <span style="color:red">[~~Position-Filled~~]</span>: I am looking for a Master student to do an internship&master thesis, which will be in collaboration with <span style="color:blue">VDL & ASML</span>. The thesis proposal is "Predictive Maintenance of Lithography System Using Log Anomaly Detection". (June 2023)
 
