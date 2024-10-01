@@ -36,8 +36,9 @@ Professional Services
   * Data Mining and Knowledge Discovery (DMKD or DAMI)
   * IEEE Internet of Things Journal (IoT)
   * AI Communications
-* Reviewer for the Following Conference:
+* Reviewer for the Following Conferences:
   * KDD conference
+  * ICLR conference
 
 Contact
 ======
