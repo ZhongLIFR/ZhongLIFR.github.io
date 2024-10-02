@@ -14,7 +14,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
 
 - **Evaluating Node Embedding Quality without Relying on Labels.**
-  - Yuhang Wang(#), **Zhong Li(#)**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference.
+  - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference. "#" means equal contribution
  
 - **Explainable Graph Neural Networks under Fire.**
   - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for TKDE.
@@ -26,7 +26,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
   - [[paper]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph) (ArXiv full version)
   - [[paper]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084) (ICSE short version)
-  - the full version has been submitted to the TMLR journal, and we are testing this algorithm on ASML's lithography machines
+  - the full version has been submitted to the TMLR journal
     
 - **Cross-Domain Graph Level Anomaly Detection.**
   - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE).
