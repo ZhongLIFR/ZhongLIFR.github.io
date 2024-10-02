@@ -12,22 +12,25 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 ## 2024
 - **Automated Feature Selection for Anomaly Detection.**
   - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
+
+- **Evaluating Node Embedding Quality without Relying on Labels.**
+  - Yuhang Wang(#), **Zhong Li(#)**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference.
  
-- **Adversarial Attacks on Graph Explanations.**
-  - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for a ML Conference .
+- **Explainable Graph Neural Networks under Fire.**
+  - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for TKDE.
     
 - **Automated Self-Supervised Learning for Graph Anomaly Detection.**
   - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review for DAMI.
-    
-- **Cross-Domain Graph Level Anomaly Detection.**
-  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE).
-  - [[paper]](https://ieeexplore.ieee.org/document/10684507/keywords#keywords), [[code]](https://github.com/ZhongLIFR/ARMET/)
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
   - [[paper]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph) (ArXiv full version)
   - [[paper]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084) (ICSE short version)
-  - the full version has been submitted to the EAAI journal, and we are testing this algorithm on ASML's lithography machines
+  - the full version has been submitted to the TMLR journal, and we are testing this algorithm on ASML's lithography machines
+    
+- **Cross-Domain Graph Level Anomaly Detection.**
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE).
+  - [[paper]](https://ieeexplore.ieee.org/document/10684507/keywords#keywords), [[code]](https://github.com/ZhongLIFR/ARMET/)
 
 ## 2023
 - **A Survey on Explainable Anomaly Detection.**
