@@ -21,8 +21,8 @@ During my PhD, I work on **trustworthy anomaly detection**, with a focus on but 
  * **Generalizability** (namely make anomaly detection models work reliably under changing conditions such as data distribution shifts, uncharted hyperarameter configurations, and the presence of adversarial perturbations) of anomaly detection methods.
 
 Currently, my reseach focus is gradually shifting to:
- * Data-Centric LLMs: how to achieve better LLMs with significantly less data?
- * Understanding of Unsupervised Learning (especially Self-Supervised Learning)
+ * **Data-Centric LLMs**: how to achieve better LLMs with significantly less data?
+ * **Understanding of Unsupervised Learning**: Why Self-Supervised Learning works (or not)? How to improve it?
 
 
 Recent News
