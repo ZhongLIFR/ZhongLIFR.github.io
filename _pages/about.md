@@ -15,10 +15,10 @@ Research Interest
 ======
 I am interested in the field of Data Mining and Machine Learning. 
 
-During my PhD, I work on **trustworthy anomaly detection**, with a focus on but not limited to complex data such as event sequence and graph-structured data for smart manufacturing. More concretely, I aim to improve:
- * **Accuracy** (namely make anomaly detection models more accurate, especially with high-dimensional, unstructured, multimodal data), 
- * **Explainability** (namely make anomaly detection models more understandable for humans)
- * **Generalizability** (namely make anomaly detection models work reliably under changing conditions such as data distribution shifts, uncharted hyperarameter configurations, and the presence of adversarial perturbations) of anomaly detection methods.
+During my PhD, I work on **trustworthy anomaly detection**, with a focus on but not limited to complex data such as event sequence and graph-structured data for smart manufacturing. More concretely, I aim to improve the following aspects of anomaly detection methods:
+ * **Accuracy**: making anomaly detection models more accurate, especially with high-dimensional, unstructured, multimodal data;
+ * **Explainability**: making anomaly detection models more understandable for humans;
+ * **Generalizability**: make anomaly detection models work reliably under changing conditions such as data distribution shifts, uncharted hyperarameter configurations, and the presence of adversarial perturbations.
 
 Currently, my reseach focus is gradually shifting to:
  * **Data-Centric LLMs**: how to achieve better LLMs with significantly less data?
@@ -49,6 +49,6 @@ Professional Services
 
 Contact
 ======
-Office BM 214, Gorlaeus Building, Einsteinweg 55, 2333 CC Leiden, The Netherlands
+Office BE 2.23, Gorlaeus Building, Einsteinweg 55, 2333 CC Leiden, The Netherlands
 
 Email: z.li(at)liacs.leidenuniv.nl
