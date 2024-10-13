@@ -24,8 +24,8 @@ Teaching Assistant of the following Courses
 Co-supervisor of the following students
 ======
 * Master Students
-  * Yuhang Wang: Unsupervised Model Selection for Graph Representation Learning, December 2023 - July 2024 (*Cum Laude*), Leiden University
-  * Timo Vos: Predictive Maintenance of Lithography System Using Log Anomaly Detection, December 2023 - August 2024, Leiden University (collaborated  with VDL-ETG and ASML)
+  * [Yuhang Wang](https://eda.liacs.nl/people/ywang): Unsupervised Model Selection for Graph Representation Learning, December 2023 - July 2024 (**Cum Laude**), Leiden University
+  * [Timo Vos](https://eda.liacs.nl/people/tvos): Predictive Maintenance of Lithography System Using Log Anomaly Detection, December 2023 - August 2024, Leiden University (collaborated  with VDL-ETG and ASML)
   * [Yuxuan Zhu](https://zzbright1998.github.io/): Data-driven inkjet jet failure detection and classification using piezo self-sensing, July 2022 - March 2023 , Leiden University (collaborated  with Canon Production Printing)
 
 * Bachelor Students
