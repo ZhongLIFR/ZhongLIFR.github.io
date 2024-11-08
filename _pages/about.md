@@ -23,7 +23,7 @@ During my PhD, I work on **trustworthy anomaly detection**, with a focus on but 
 Currently, my reseach focus is gradually shifting to:
  * **Data-Centric LLMs**: how to achieve better LLMs with significantly less data?
  * **Understanding of Unsupervised Learning**: Why Self-Supervised Learning works (or not)? How to improve it?
- * **Diffusion Models**: How can diffusion models be effectively extended to handle tabular and/or discrete data? (for enabling cross-modality integration?)
+ * **Diffusion Models**: How to better extend diffusion models for tabular and/or discrete data?
 
 
 Recent News
