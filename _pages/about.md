@@ -39,12 +39,13 @@ Recent News
 
 Professional Services
 ======
-* Invited Reviewer for the Following Journals:
+* Invited Reviewer for the following Journals:
   * IEEE Transactions on Knowledge and Data Engineering (TKDE)
   * Data Mining and Knowledge Discovery (DMKD or DAMI)
   * IEEE Internet of Things Journal (IoT)
+  * IEEE Intelligent Systems
   * AI Communications
-* Reviewer for the Following Conferences:
+* Reviewer for the following Conferences:
   * KDD conference
   * ICLR conference
 
