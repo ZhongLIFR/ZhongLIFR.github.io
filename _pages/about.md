@@ -56,5 +56,4 @@ Office BE 2.23, Gorlaeus Building, Einsteinweg 55, 2333 CC Leiden, The Netherlan
 Email: z.li(at)liacs.leidenuniv.nl
 
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=liC9mvlGGJlmrMPW3_UsZgdMHVrNdaBqiAIqNuGj5SY&cl=ffffff&w=a"></script>
-
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=298&t=tt&d=liC9mvlGGJlmrMPW3_UsZgdMHVrNdaBqiAIqNuGj5SY&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
