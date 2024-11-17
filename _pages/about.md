@@ -28,6 +28,7 @@ Currently, my reseach focus is gradually shifting to:
 
 Recent News
 ======
+- 2024.11: I will give a poster demonstration of our paper [Explainable Graph Neural Networks Under Fire](https://arxiv.org/abs/2406.06417) at the the Amsterdam meetup for the global [LoG Conference](https://logconference.org/).
 - 2024.09: 🔥🔥 Our paper titled [Cross-domain Graph Level Anomaly Detection](https://ieeexplore.ieee.org/document/10684507/keywords#keywords) is accepted by TKDE for publication!
 - 2024.01: 🔥🔥 Our paper titled [Graph Neural Networks based Log Anomaly Detection and Explanation](https://arxiv.org/abs/2307.00527) is accepted by ICSE'24 poster track! 
 - 2023.07: 🔥🔥 Our paper titled [A survey on explainable anomaly detection](https://dl.acm.org/doi/full/10.1145/3609333) is accepted by TKDD for publication!
