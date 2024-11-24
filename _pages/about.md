@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Zhong Li, and I am a final-year Ph.D. candidate in Computer Science at Leiden University, affiliated with the [EDA Lab](https://eda.liacs.nl/). I am fortunate  to be supervised  by Dr. [Matthijs van Leeuwen](https://scholar.google.com/citations?user=GGLwU28AAAAJ&hl=en&oi=ao) (daily supervisor, promotor) and Prof. Dr. [Thomas Bäck](https://scholar.google.com/citations?hl=en&user=x7LEID0AAAAJ) (promotor).  I worked as a visiting PhD researcher in the [DAML](https://www.cs.cit.tum.de/en/daml/home/) group at Technical University of Munich in 2024, supervised by Prof. Dr. [Stephan Günnemann](https://scholar.google.de/citations?user=npqoAWwAAAAJ&hl=en).
+My name is Zhong Li, and I am a final-year Ph.D. candidate in Computer Science at Leiden University, affiliated with the [EDA Lab](https://eda.liacs.nl/). I am fortunate  to be supervised  by Dr. [Matthijs van Leeuwen](https://scholar.google.com/citations?user=GGLwU28AAAAJ&hl=en&oi=ao) (daily supervisor, promotor) and Prof. Dr. [Thomas Bäck](https://scholar.google.com/citations?hl=en&user=x7LEID0AAAAJ) (promotor). I worked as a visiting PhD researcher in the [DAML](https://www.cs.cit.tum.de/en/daml/home/) group at Technical University of Munich in 2024, supervised by Prof. Dr. [Stephan Günnemann](https://scholar.google.de/citations?user=npqoAWwAAAAJ&hl=en).
 
 
 Research Interest
@@ -20,7 +20,7 @@ During my PhD, I work on **trustworthy anomaly detection**, with a focus on but 
  * **Explainability**: make anomaly detection models more understandable for humans;
  * **Generalizability**: make anomaly detection models work reliably under changing conditions such as data distribution shifts, uncharted hyperarameter configurations, and the presence of adversarial perturbations.
 
-Currently, my reseach focus is gradually shifting to:
+Currently, my research focus is gradually shifting to:
  * **Data-Centric LLMs**: how to achieve better LLMs with significantly less data?
  * **Understanding of Unsupervised Learning**: Why Self-Supervised Learning works (or not)? How to improve it?
  * **Diffusion Models**: How to better extend diffusion models for tabular and/or discrete data?
@@ -40,13 +40,13 @@ Recent News
 
 Professional Services
 ======
-* Invited Reviewer for the following Journals:
+* Invited Reviewer for the following journals:
   * IEEE Transactions on Knowledge and Data Engineering (TKDE)
   * Data Mining and Knowledge Discovery (DMKD or DAMI)
   * IEEE Internet of Things Journal (IoT)
   * IEEE Intelligent Systems
   * AI Communications
-* Reviewer for the following Conferences:
+* Reviewer for the following conferences:
   * KDD conference
   * ICLR conference
 
