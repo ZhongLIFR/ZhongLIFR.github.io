@@ -46,9 +46,7 @@ Professional Services
   * IEEE Internet of Things Journal (IoT)
   * IEEE Intelligent Systems
   * AI Communications
-* Reviewer for the following conferences:
-  * KDD conference
-  * ICLR conference
+* Programme Committee (PC) member for ECMLPKDD, and Reviewer for KDD, ICLR.
 
 Contact
 ======
