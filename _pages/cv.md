@@ -12,7 +12,7 @@ I cherish every moment that I spent in different universities and companies. I a
 
 Education
 ======
-* PhD student in Computer Science, [Leiden University](https://www.universiteitleiden.nl/en), Leiden, the Netherlands, 2020.11 - Present
+* PhD student in Computer Science, [Leiden University](https://www.universiteitleiden.nl/en), Leiden, the Netherlands, 2020.11 - 2025.01 
 * Diplôme d'Ingénieur in Data Science, [ENSAI](https://ensai.fr/en/), Rennes, France. 2017.09 - 2019.10
   * [EIFFEL excellence scholarship](https://www.campusfrance.org/en/the-france-excellence-eiffel-scholarship-program) recipient
 * M.S. in Mathematics, [Tongji University](https://en.tongji.edu.cn/p/#/), Shanghai, China. 2016.09 - 2020.03
@@ -22,6 +22,9 @@ Education
 
 Work experience
 ======
+* February. 2025 - Present: Postdoc
+  * Leiden University, Leiden, the Netherlands
+    
 * March. 2020 - October. 2020: Data Scientist
   * Shanghai Micro Electronics Equipment Group (SMEE), Shanghai, China
 
