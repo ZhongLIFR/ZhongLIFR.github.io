@@ -13,7 +13,7 @@ My name is Zhong Li, and I am a postdoc in Computer Science at Leiden University
 
 Research Interest
 ======
-I am interested in the field of Data Mining and Machine Learning, especially trustworthy AI.
+I am broadly interested in the field of Data Mining and Machine Learning, especially trustworthy AI.
 
 For my postdoc, I focus on trustworthy generative models: "when the generative models are able to provide insights into the underlying mechanisms of the data they generate, we should also provide such insights on the models themselves." I am working on some topics like:
  * **Understanding of Unsupervised Learning**: Why Self-Supervised Learning works (or not)? How to improve it?
