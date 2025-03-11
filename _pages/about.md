@@ -42,6 +42,7 @@ Professional Services
 * Invited Reviewer for the following journals:
   * IEEE Transactions on Knowledge and Data Engineering (TKDE)
   * Data Mining and Knowledge Discovery (DMKD or DAMI)
+  * International Journal of Computer Vision (IJCV)
   * IEEE Internet of Things Journal (IoT)
   * IEEE Intelligent Systems
   * AI Communications
