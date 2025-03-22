@@ -43,6 +43,7 @@ Professional Services
   * IEEE Transactions on Knowledge and Data Engineering (TKDE)
   * Data Mining and Knowledge Discovery (DMKD or DAMI)
   * International Journal of Computer Vision (IJCV)
+  * IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
   * IEEE Internet of Things Journal (IoT)
   * IEEE Intelligent Systems
   * AI Communications
