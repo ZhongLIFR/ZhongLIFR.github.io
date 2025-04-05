@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 You can also find my articles on my <u><a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&hl=en&oi=ao">Google Scholar</a>.</u> My research can be summarised by the following keywords:
-- Methodologies-Oriented: *Generaive Models; Flow Matching; Diffusion Models; Unsupervised Machine Learning; Anomaly Detection; Transfer Learning; XAI; Graph Neural Networks*
+- Methodologies-Oriented: *Generative Models; Flow Matching; Diffusion Models; Unsupervised Machine Learning; Anomaly Detection; Transfer Learning; XAI; Graph Neural Networks*
 - Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
 
 ## 2025
@@ -14,16 +14,19 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
  
 - **Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions.**
-  - **Zhong Li**, Qi Huang, Lincen Yang, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TPAMI.
-
+  - **Zhong Li**, Qi Huang, Lincen Yang #, Jiayang Shi #, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TPAMI. "#" means equal contribution
+  - [[paper]](https://arxiv.org/abs/2502.17119), [[code]](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
+    
 - **Evaluating Node Embedding Quality without Relying on Labels.**
   - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference. "#" means equal contribution
  
 - **Explainable Graph Neural Networks under Fire.**
   - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for TKDE.
+  - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
     
-- **Automated Self-Supervised Learning for Graph Anomaly Detection.**
+- **Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection.**
   - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review for DAMI (major revision).
+  - [[paper]](https://arxiv.org/abs/2501.14694), [[code]](https://github.com/ZhongLIFR/AutoGAD2024)
     
 ## 2024
     
