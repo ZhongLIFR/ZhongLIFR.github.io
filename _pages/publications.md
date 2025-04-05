@@ -17,7 +17,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference. "#" means equal contribution
  
 - **Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions.**
-  - **Zhong Li**, Qi Huang, Lincen Yang #, Jiayang Shi #, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TPAMI. "#" means equal contribution
+  - **Zhong Li**, Qi Huang #, Lincen Yang #, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TPAMI. "#" means equal contribution
   - [[paper]](https://arxiv.org/abs/2502.17119), [[code]](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
  
 - **Explainable Graph Neural Networks under Fire.**
