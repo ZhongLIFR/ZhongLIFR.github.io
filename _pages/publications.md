@@ -6,12 +6,15 @@ author_profile: true
 ---
 
 You can also find my articles on my <u><a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&hl=en&oi=ao">Google Scholar</a>.</u> My research can be summarised by the following keywords:
-- Methodologies-Oriented: *Unsupervised Machine Learning; Anomaly Detection; Transfer Learning; XAI; Graph Neural Networks*
+- Methodologies-Oriented: *Generaive Models; Flow Matching; Diffusion Models; Unsupervised Machine Learning; Anomaly Detection; Transfer Learning; XAI; Graph Neural Networks*
 - Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
 
-## 2024
+## 2025
 - **Automated Feature Selection for Anomaly Detection.**
   - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
+ 
+- **Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions.**
+  - **Zhong Li**, Qi Huang, Lincen Yang, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TPAMI.
 
 - **Evaluating Node Embedding Quality without Relying on Labels.**
   - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference. "#" means equal contribution
@@ -20,7 +23,9 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for TKDE.
     
 - **Automated Self-Supervised Learning for Graph Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review for DAMI.
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review for DAMI (major revision).
+    
+## 2024
     
 - **Graph Neural Networks based Log Anomaly Detection and Explanation.**
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
