@@ -55,7 +55,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
   - IEEE Internet of Things Journal (IoT)
   - IEEE Intelligent Systems
   - AI Communications
-- PC Member or Reviewer:
+- PC Member or Reviewer for conferences:
   - ECMLPKDD
   - KDD
   - ICLR
