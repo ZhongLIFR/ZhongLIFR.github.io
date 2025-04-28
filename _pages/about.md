@@ -50,6 +50,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
   - IEEE Transactions on Knowledge and Data Engineering (TKDE)
   - Data Mining and Knowledge Discovery (DMKD / DAMI)
   - International Journal of Computer Vision (IJCV)
+  - IEEE Transactions on Dependable and Secure Computing (TDSC)
   - IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
   - IEEE Internet of Things Journal (IoT)
   - IEEE Intelligent Systems
