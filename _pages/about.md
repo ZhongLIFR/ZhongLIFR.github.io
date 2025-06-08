@@ -34,15 +34,16 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
 
 ## Recent News
 
+- **2025.06**: 🔥🔥 One research paper is accepted by DMKD: [Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection](https://arxiv.org/abs/2501.14694)
 - **2025.05**: 🎓 Successfully defended my PhD thesis on *Trustworthy Anomaly Detection for Smart Manufacturing* at Leiden University!  
   📄 [Read the full thesis](https://hdl.handle.net/1887/4239055)
 - **2024.11**: Presenting our paper [Explainable Graph Neural Networks Under Fire](https://arxiv.org/abs/2406.06417) at the Amsterdam meetup for the global [LoG Conference](https://logconference.org/)
-- **2024.09**: 🔥🔥 TKDE Research paper: [Cross-domain Graph Level Anomaly Detection](https://ieeexplore.ieee.org/document/10684507/keywords#keywords)
+- **2024.09**: 🔥🔥 One research paper is accepted by TKDE: [Cross-domain Graph Level Anomaly Detection](https://ieeexplore.ieee.org/document/10684507/keywords#keywords)
 - **2024.01**: 🔥🔥 ICSE'24 Poster: [Graph Neural Networks based Log Anomaly Detection and Explanation](https://arxiv.org/abs/2307.00527)
-- **2023.07**: 🔥🔥 TKDD Survey paper: [A survey on explainable anomaly detection](https://dl.acm.org/doi/full/10.1145/3609333) — 🏆 Highly cited paper based on ESI.
-- **2023.07**: 🔥🔥 DMKD Research Paper: [Explainable Contextual Anomaly Detection using Quantile Regression Forests](https://link.springer.com/article/10.1007/s10618-023-00967-z)
-- **2022.12**: 🔥🔥 SIGKDD Explorations Research paper: [Feature Selection for Fault Detection and Prediction based on Event Log Analysis](https://dl.acm.org/doi/abs/10.1145/3575637.3575652)
-- **2021.10**: 🔥🔥 Clinical Trials Research paper: [Choosing and changing the analysis scale in non-inferiority trials with a binary outcome](https://pubmed.ncbi.nlm.nih.gov/34693789/)
+- **2023.07**: 🔥🔥 One survey paper is accepted by TKDD: [A survey on explainable anomaly detection](https://dl.acm.org/doi/full/10.1145/3609333) — 🏆 Highly cited paper based on ESI.
+- **2023.07**: 🔥🔥 One research paper is accepted by DMKD: [Explainable Contextual Anomaly Detection using Quantile Regression Forests](https://link.springer.com/article/10.1007/s10618-023-00967-z)
+- **2022.12**: 🔥🔥 One research paper is accepted by SIGKDD Explorations: [Feature Selection for Fault Detection and Prediction based on Event Log Analysis](https://dl.acm.org/doi/abs/10.1145/3575637.3575652)
+- **2021.10**: 🔥🔥 One research paper is accepted by Clinical Trials: [Choosing and changing the analysis scale in non-inferiority trials with a binary outcome](https://pubmed.ncbi.nlm.nih.gov/34693789/)
 - <span style="color:red">[~~Position Cancelled~~]</span> Internship & thesis opportunity with <span style="color:blue">Canon</span> on Inkjet Jet Failure Detection (Oct 2023)
 - <span style="color:red">[~~Position Filled~~]</span> Internship & thesis with <span style="color:blue">VDL & ASML</span> on Predictive Maintenance via Log Anomaly Detection (June 2023)
 
