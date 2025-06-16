@@ -35,10 +35,9 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
   - [[paper]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph) (ArXiv full version)
   - [[paper]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084) (ICSE short version)
-  - the full version has been submitted to the TMLR journal
     
 - **Cross-Domain Graph Level Anomaly Detection.**
-  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE).
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE), 36(12), pp.7839-7850.
   - [[paper]](https://ieeexplore.ieee.org/document/10684507/keywords#keywords), [[code]](https://github.com/ZhongLIFR/ARMET/)
 
 ## 2023
