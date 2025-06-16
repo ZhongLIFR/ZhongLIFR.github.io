@@ -26,7 +26,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
     
 - **Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI).
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI) [In Press].
   - [[paper]](https://arxiv.org/abs/2501.14694), [[code]](https://github.com/ZhongLIFR/AutoGAD2024)
     
 ## 2024
@@ -37,7 +37,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - [[paper]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084) (ICSE short version)
     
 - **Cross-Domain Graph Level Anomaly Detection.**
-  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE), 36(12), pp.7839-7850.
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE). 36(12):7839-7850
   - [[paper]](https://ieeexplore.ieee.org/document/10684507/keywords#keywords), [[code]](https://github.com/ZhongLIFR/ARMET/)
 
 ## 2023
