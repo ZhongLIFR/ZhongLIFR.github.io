@@ -10,8 +10,9 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 - Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
 
 ## 2025
-- **Automated Feature Selection for Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Milan Luijken, Samuel Smulders, Matthijs van Leeuwen. In Preparation
+
+- **A Flow Matching Model for Tabular Anomaly Detection.**
+  - **Zhong Li #**, Qi Huang, Yuxuan Zhu, Lincen Yang, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen 
  
 - **Evaluating Node Embedding Quality without Relying on Labels.**
   - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference. "#" means equal contribution
@@ -25,7 +26,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
     
 - **Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Under Review for DAMI (major revision).
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI).
   - [[paper]](https://arxiv.org/abs/2501.14694), [[code]](https://github.com/ZhongLIFR/AutoGAD2024)
     
 ## 2024
