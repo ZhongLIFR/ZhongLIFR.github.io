@@ -12,7 +12,7 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 ## 2025
 
 - **A Flow Matching Model for Tabular Anomaly Detection.**
-  - **Zhong Li #**, Qi Huang, Yuxuan Zhu, Lincen Yang, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen 
+  - **Zhong Li**, Qi Huang, Yuxuan Zhu, Lincen Yang, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen 
  
 - **Evaluating Node Embedding Quality without Relying on Labels.**
   - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference. "#" means equal contribution
