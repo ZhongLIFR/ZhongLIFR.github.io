@@ -57,8 +57,10 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
   - International Journal of Computer Vision (IJCV)
   - IEEE Transactions on Dependable and Secure Computing (TDSC)
   - IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
+  - IEEE Transactions on Cloud Computing
   - IEEE Internet of Things Journal (IoT)
   - IEEE Intelligent Systems
+  - Measurement
   - AI Communications
 - PC Member or Reviewer for conferences:
   - ECMLPKDD
