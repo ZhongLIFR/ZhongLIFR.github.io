@@ -35,7 +35,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
 
 ## Recent News
 
-- **2025.06**: 🔥🔥 One research paper is accepted by DMKD: [Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection](https://arxiv.org/abs/2501.14694)
+- **2025.06**: 🔥🔥 One research paper is accepted by DMKD: [Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection](https://link.springer.com/article/10.1007/s10618-025-01115-5)
 - **2025.05**: 🎓 Successfully defended my PhD thesis on *Trustworthy Anomaly Detection for Smart Manufacturing* at Leiden University!  
   📄 [Read the full thesis](https://hdl.handle.net/1887/4239055)
 - **2024.11**: Presenting our paper [Explainable Graph Neural Networks Under Fire](https://arxiv.org/abs/2406.06417) at the Amsterdam meetup for the global [LoG Conference](https://logconference.org/)
