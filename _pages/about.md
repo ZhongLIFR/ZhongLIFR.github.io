@@ -12,7 +12,7 @@ redirect_from:
 
 My name is **Zhong Li**, and I am currently a postdoctoral researcher in Computer Science at **Leiden University**, affiliated with the [EDA Lab](https://eda.liacs.nl/). I completed my PhD under the supervision of Dr. [Matthijs van Leeuwen](https://scholar.google.com/citations?user=GGLwU28AAAAJ&hl=en&oi=ao) (daily supervisor and promotor) and Prof. Dr. [Thomas Bäck](https://scholar.google.com/citations?hl=en&user=x7LEID0AAAAJ) (promotor). In 2024, I was a visiting PhD researcher at the [DAML](https://www.cs.cit.tum.de/en/daml/home/) group, Technical University of Munich, supervised by Prof. Dr. [Stephan Günnemann](https://scholar.google.de/citations?user=npqoAWwAAAAJ&hl=en).
 
-📘 **PhD Thesis**: [Trustworthy Anomaly Detection for Smart Manufacturing](https://www.universiteitleiden.nl/en/events/2025/05/trustworthy-anomaly-detection-for-smart-manufacturing)
+📘 **PhD Thesis**: [Trustworthy Anomaly Detection for Smart Manufacturing](https://scholarlypublications.universiteitleiden.nl/handle/1887/4239055)
 
 ## Research Interests
 
