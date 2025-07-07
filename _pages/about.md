@@ -23,6 +23,7 @@ I am currently working on *trustworthy generative models*, with a central belief
 > When generative models can provide insights into the data they generate, they should also offer insights about themselves.
 
 Key areas of interest include:
+- **LLM Reasoning**: How to speed up LLM reasoning? Detect reasoning errors and ensure faithfulness?
 - **Flow Matching and Diffusion Models**: What are they actually learning? How can we better extend these models for tabular and/or discrete data?
 - **Understanding Unsupervised Learning**: Why does self-supervised learning work (or not)? How can it be improved?
 
