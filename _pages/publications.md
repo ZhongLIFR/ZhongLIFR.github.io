@@ -22,12 +22,12 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
   - [[paper]](https://arxiv.org/abs/2502.17119), [[code]](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
  
 - **Explainable Graph Neural Networks under Fire.**
-  - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for TKDE.
+  - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for an AI conference.
   - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
     
 - **Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI) [In Press].
-  - [[paper]](https://arxiv.org/abs/2501.14694), [[code]](https://github.com/ZhongLIFR/AutoGAD2024)
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI). 39(44): 1-43.
+  - [[paper]](https://link.springer.com/article/10.1007/s10618-025-01115-5), [[code]](https://github.com/ZhongLIFR/AutoGAD2024)
     
 ## 2024
     
