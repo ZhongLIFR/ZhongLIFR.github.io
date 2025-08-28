@@ -52,7 +52,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
 
 ## Professional Service
 
-- Reviewer for journals:
+- Reviewer for the following journals:
   - IEEE Transactions on Knowledge and Data Engineering (TKDE)
   - Data Mining and Knowledge Discovery (DMKD / DAMI)
   - International Journal of Computer Vision (IJCV)
@@ -63,7 +63,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
   - IEEE Intelligent Systems
   - Measurement
   - AI Communications
-- PC Member or Reviewer for conferences:
+- PC Member or Reviewer for the following conferences:
   - ECMLPKDD
   - KDD
   - ICLR
