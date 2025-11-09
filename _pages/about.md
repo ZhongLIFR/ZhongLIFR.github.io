@@ -16,7 +16,7 @@ redirect_from:
 
 ## Research Interests
 
-My research lies broadly in **Data Mining** and **Machine Learning**,with strong interest in **AI for Math**.
+My research lies broadly in **Data Mining** and **Machine Learning**, with strong interest in **AI for Math**.
 
 ### Postdoctoral Research
 During my postdoc,  I am working on generative AI for Math, with a particular focus on:
