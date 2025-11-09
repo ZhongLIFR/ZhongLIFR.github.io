@@ -10,22 +10,18 @@ redirect_from:
 
 ## Introduction
 
-My name is **Zhong Li**, and I am currently a postdoctoral researcher in Computer Science at **Leiden University**, affiliated with the [EDA Lab](https://eda.liacs.nl/). I completed my PhD under the supervision of Dr. [Matthijs van Leeuwen](https://scholar.google.com/citations?user=GGLwU28AAAAJ&hl=en&oi=ao) (daily supervisor and promotor) and Prof. Dr. [Thomas Bäck](https://scholar.google.com/citations?hl=en&user=x7LEID0AAAAJ) (promotor). In 2024, I was a visiting PhD researcher at the [DAML](https://www.cs.cit.tum.de/en/daml/home/) group, Technical University of Munich, supervised by Prof. Dr. [Stephan Günnemann](https://scholar.google.de/citations?user=npqoAWwAAAAJ&hl=en).
+**Zhong Li** is a guest researcher in Computer Science at **Leiden University**, affiliated with the [EDA Lab](https://eda.liacs.nl/). I completed my PhD under the supervision of Dr. [Matthijs van Leeuwen](https://scholar.google.com/citations?user=GGLwU28AAAAJ&hl=en&oi=ao) (daily supervisor and promotor) and Prof. Dr. [Thomas Bäck](https://scholar.google.com/citations?hl=en&user=x7LEID0AAAAJ) (promotor). In 2024, I was a visiting PhD researcher at the [DAML](https://www.cs.cit.tum.de/en/daml/home/) group, Technical University of Munich, supervised by Prof. Dr. [Stephan Günnemann](https://scholar.google.de/citations?user=npqoAWwAAAAJ&hl=en).
 
 📘 **PhD Thesis**: [Trustworthy Anomaly Detection for Smart Manufacturing](https://scholarlypublications.universiteitleiden.nl/handle/1887/4239055)
 
 ## Research Interests
 
-My research lies broadly in **Data Mining** and **Machine Learning**, with a strong focus on **Trustworthy AI**.
+My research lies broadly in **Data Mining** and **Machine Learning**,with strong interest in **AI for Math**.
 
 ### Postdoctoral Research
-I am currently working on *trustworthy generative models*, with a central belief:  
-> When generative models can provide insights into the data they generate, they should also offer insights about themselves.
-
-Key areas of interest include:
-- **LLM Reasoning**: How to speed up LLM reasoning? Detect reasoning errors and ensure faithfulness?
-- **Flow Matching and Diffusion Models**: What are they actually learning? How can we better extend these models for tabular and/or discrete data?
-- **Understanding Unsupervised Learning**: Why does self-supervised learning work (or not)? How can it be improved?
+During my postdoc,  I am working on generative AI for Math, with a particular focus on:
+- **LLM for Optimization Modeling**
+- **Flow Matching and Diffusion Models**
 
 ### PhD Research
 During my PhD, I focused on **trustworthy anomaly detection**, particularly for complex data like event sequences and graph-structured data in smart manufacturing contexts. My goals were to enhance:
@@ -35,6 +31,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
 
 ## Recent News
 
+- **2025.11**: 🔥🔥 One research paper is accepted by AAAI for oral presentation: Learning Subgroups with Maximum Treatment Effects without Causal Heuristics. Congratulations to [Lincen](https://www.lincen.nl/).
 - **2025.09**: 🔥🔥 One research paper is accepted by NeurIPS: [Scalable, Explainable and Provably Robust Anomaly Detection with One-Step Flow Matching](https://neurips.cc/virtual/2025/poster/116486)
 - **2025.06**: 🔥🔥 One research paper is accepted by DMKD: [Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection](https://link.springer.com/article/10.1007/s10618-025-01115-5)
 - **2025.05**: 🎓 Successfully defended my PhD thesis on *Trustworthy Anomaly Detection for Smart Manufacturing* at Leiden University!  
@@ -62,6 +59,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
   - IEEE Transactions on Cloud Computing (TCC)
   - IEEE Internet of Things Journal (IoT)
   - IEEE Intelligent Systems
+  - Pattern Recognition
   - Measurement
   - AI Communications
 - PC Member or Reviewer for the following conferences:
