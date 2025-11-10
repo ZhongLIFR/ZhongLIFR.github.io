@@ -10,20 +10,21 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 - Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
 
 ## 2025
-
-- **A Flow Matching Model for Tabular Anomaly Detection.**
-  - **Zhong Li**, Qi Huang, Yuxuan Zhu, Lincen Yang, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen. Under Review for a ML conference.
  
 - **Latent Space Analaysis for Unsupervised Hyperparameter Optimisation.**
-  - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for a ML conference. "#" means equal contribution
+  - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for an AI conference. "#" means equal contribution
  
 - **Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions.**
-  - **Zhong Li**, Qi Huang #, Lincen Yang #, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TPAMI. "#" means equal contribution
+  - **Zhong Li**, Qi Huang, Lincen Yang *, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for CSUR. "*" means corresponding author
   - [[paper]](https://arxiv.org/abs/2502.17119), [[code]](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
  
 - **Explainable Graph Neural Networks under Fire.**
   - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for an AI conference.
   - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
+
+- **Scalable, Explainable and Provably Robust Anomaly Detection with One-Step Flow Matching.**
+  - **Zhong Li**, Qi Huang, Yuxuan Zhu, Lincen Yang*, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen. NeurIPS 2025. "*" means corresponding author.
+  - [[paper]](https://arxiv.org/abs/2510.18328),  [[code]](https://github.com/ZhongLIFR/TCCM-NIPS)
     
 - **Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection.**
   - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI). 39(44): 1-43.
