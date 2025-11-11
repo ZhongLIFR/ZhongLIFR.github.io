@@ -31,6 +31,7 @@ During my PhD, I focused on **trustworthy anomaly detection**, particularly for 
 
 ## Recent News
 
+- **2025.11**: 🔥🔥 Our research paper [Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection](https://link.springer.com/article/10.1007/s10618-025-01115-5) is selected by AAAI journal track for presentation. 
 - **2025.11**: 🔥🔥 One research paper is accepted by AAAI for oral presentation: Learning Subgroups with Maximum Treatment Effects without Causal Heuristics. Congratulations to [Lincen](https://www.lincen.nl/).
 - **2025.09**: 🔥🔥 One research paper is accepted by NeurIPS: [Scalable, Explainable and Provably Robust Anomaly Detection with One-Step Flow Matching](https://neurips.cc/virtual/2025/poster/116486)
 - **2025.06**: 🔥🔥 One research paper is accepted by DMKD: [Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection](https://link.springer.com/article/10.1007/s10618-025-01115-5)
