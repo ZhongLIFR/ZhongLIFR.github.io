@@ -62,8 +62,8 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
   - IEEE Intelligent Systems
   - Pattern Recognition
   - Computer Networks
-  - Measurement
   - AI Communications
+  - ~~Measurement~~ (bad experience)
 - PC Member or Reviewer for the following conferences:
   - ECMLPKDD
   - KDD
