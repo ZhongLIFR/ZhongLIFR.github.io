@@ -63,7 +63,7 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
   - Pattern Recognition
   - Computer Networks
   - AI Communications
-  - ~~Measurement~~ (bad experience)
+  - ~~Measurement~~ (bad review experience)
 - PC Member or Reviewer for the following conferences:
   - ECMLPKDD
   - KDD
