@@ -24,7 +24,7 @@ During his postdoc,  he works on generative AI for Math, with a particular focus
 - **Flow Matching and Diffusion Models**
 
 ### PhD Research
-During his PhD, he focused on **trustworthy anomaly detection**, particularly for complex data like event sequences and graph-structured data in smart manufacturing contexts. My goals were to enhance:
+During his PhD, he focused on **trustworthy anomaly detection**, particularly for complex data like event sequences and graph-structured data in smart manufacturing contexts. His goals were to enhance:
 - **Accuracy**: Improve performance with high-dimensional, unstructured, multimodal data
 - **Explainability**: Make models more interpretable and human-friendly
 - **Generalizability**: Ensure robustness under data shifts, unknown hyperparameter settings, and adversarial noise
@@ -61,6 +61,7 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
   - IEEE Internet of Things Journal (IoT)
   - IEEE Intelligent Systems
   - Pattern Recognition
+  - Computer Networks
   - Measurement
   - AI Communications
 - PC Member or Reviewer for the following conferences:
@@ -68,6 +69,7 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
   - KDD
   - ICLR
   - AAAI
+  - CVPR
 
 ## Contact
 
