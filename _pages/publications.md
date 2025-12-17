@@ -21,13 +21,17 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 - **Explainable Graph Neural Networks under Fire.**
   - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for an AI conference.
   - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
+ 
+- **Learning Subgroups with Maximum Treatment Effects without Causal Heuristics.**
+  - Lincen Yang, **Zhong Li\***, Matthijs van Leeuwen, Saber Salehkaleybar. AAAI 2026 Oral. "\*" means corresponding author.
+  - [[paper]](https://arxiv.org/abs/2511.20189),  [[code]](https://github.com/ylincen/causal-subgroup)
 
 - **Scalable, Explainable and Provably Robust Anomaly Detection with One-Step Flow Matching.**
   - **Zhong Li**, Qi Huang, Yuxuan Zhu, Lincen Yang\*, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen. NeurIPS 2025. "\*" means corresponding author.
   - [[paper]](https://arxiv.org/abs/2510.18328),  [[code]](https://github.com/ZhongLIFR/TCCM-NIPS)
     
 - **Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection.**
-  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI). 39(44): 1-43.
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI). 39(44): 1-43. (AAAI 2026 Journal Track)
   - [[paper]](https://link.springer.com/article/10.1007/s10618-025-01115-5), [[code]](https://github.com/ZhongLIFR/AutoGAD2024)
     
 ## 2024
