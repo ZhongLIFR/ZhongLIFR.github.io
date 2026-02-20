@@ -64,7 +64,7 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
   - Computer Networks
   - AI Communications
   - ~~Measurement~~ 
-- PC Member or Reviewer for the following conferences: ICML (26), ICLR (24, 25), AAAI (24, 25), CVPR (26), ECCV (26), KDD (24), ECMLPKDD (25, 26)
+- PC Member or Reviewer for the following conferences: ICML (26), ICLR (24, 25), AAAI (24, 25), CVPR (26), ECCV (26), KDD (24, 26), ECMLPKDD (25, 26)
 
 
 ## Contact
