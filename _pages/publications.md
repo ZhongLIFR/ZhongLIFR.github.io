@@ -9,18 +9,32 @@ You can also find my articles on my <u><a href="https://scholar.google.com/citat
 - Methodologies-Oriented: *Generative Models; Flow Matching; Diffusion Models; Unsupervised Machine Learning; Anomaly Detection; Transfer Learning; XAI; Graph Neural Networks*
 - Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
 
-## 2025
+
+## 2026
+
+- **MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling.**
+  - **Zhong Li**, Qi Huang, Yuxuan Zhu, Mohammad Mohammadi Amiri, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen, Zaiwen Wen, Lincen Yang. Under Review for an AI conference. "#" means equal contribution
  
+- **OptArgus: A Multi-Agent System to Detect Hallucinations in LLM-based Optimization Modeling.**
+  - **Zhong Li**, Zihan Guo, Xiaohan Lu, Juntao Wang, Jie Song, Chao Shen, Jiageng Wu, Mingyang Sun. Under Review for an AI conference. "#" means equal contribution
+
 - **Latent Space Analaysis for Unsupervised Hyperparameter Optimisation.**
   - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for an AI conference. "#" means equal contribution
  
-- **Diffusion Models for Tabular Data: Challenges, Current Progress, and Future Directions.**
-  - **Zhong Li**, Qi Huang, Lincen Yang\*, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for CSUR. "\*" means corresponding author
+- **Diffusion and Flow Matching Models for Tabular Data: A Survey.**
+  - **Zhong Li**, Qi Huang, Lincen Yang\*, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TKDE. "\*" means corresponding author
   - [[paper]](https://arxiv.org/abs/2502.17119), [[code]](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
  
 - **Explainable Graph Neural Networks under Fire.**
   - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for an AI conference.
   - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
+ 
+- **Constructing Industrial-Scale Optimization Modeling Benchmark.**
+  - **Zhong Li**, Hongliang Lu, Tao Wei, Yuxuan Chen, Wenyu Liu, Yuan Lan, Fan Zhang, Zaiwen Wen. ICML 2026.
+  - [[paper]](https://arxiv.org/abs/2602.10450),  [[code]](https://github.com/optsuite/MIPLIB-NL)
+
+
+## 2025
  
 - **Learning Subgroups with Maximum Treatment Effects without Causal Heuristics.**
   - Lincen Yang, **Zhong Li\***, Matthijs van Leeuwen, Saber Salehkaleybar. AAAI 2026 Oral. "\*" means corresponding author.
