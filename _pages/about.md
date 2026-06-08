@@ -65,7 +65,8 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
   - Computer Networks
   - AI Communications
   - ~~Measurement~~ 
-- PC Member or Reviewer for the following conferences: ICML (26), ICLR (24, 25), AAAI (24, 25), CVPR (26), ECCV (26), KDD (24, 26), ECMLPKDD (25, 26)
+- PC Member or Reviewer for the following conferences: NeurIPS (26), ICML (26), ICLR (24, 25), AAAI (24, 25), CVPR (26), ECCV (26), KDD (24, 26), ECMLPKDD (25, 26)
+- Area Chair (AC) for the following venues: AI for Math Workshop @ ICML 2026
 
 
 ## Contact
@@ -73,4 +74,4 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
 **WeChat:** DigitalTwinNL
 **Email:** z.li(at)liacs.leidenuniv.nl
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=298&t=tt&d=liC9mvlGGJlmrMPW3_UsZgdMHVrNdaBqiAIqNuGj5SY&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
+<script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?cl=080808&w=298&t=tt&d=liC9mvlGGJlmrMPW3_UsZgdMHVrNdaBqiAIqNuGj5SY&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>
