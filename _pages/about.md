@@ -32,7 +32,9 @@ During his PhD, he focused on **trustworthy anomaly detection**, particularly fo
 ## Recent News
 
 - **2026.09**: 🔥🔥 One research paper is accepted by NeurIPS: [PEARL: Solver-in-the-Loop Interactive Optimization Modeling from Natural Language](https://arxiv.org/abs/2607.18256). Congratulations to [Hongliang](https://auroralhl.github.io/).
-- **2026.09**: 🔥🔥 One research paper is accepted by NeurIPS: [MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling](https://arxiv.org/abs/2605.12154). 
+- **2026.09**: 🔥🔥 One research paper is accepted by NeurIPS: [MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling](https://arxiv.org/abs/2605.12154).
+- **2026.09**: 🔥🔥 One research paper is accepted by NeurIPS: [Does Compression Imply Generalization? A Minimum Description Length Perspective]. Congratulations to [Lincen](https://auroralhl.github.io/).
+- **2026.09**: 🔥🔥 One research paper is accepted by NeurIPS: [Optimal Subgroup Discovery at Every Support Threshold]. Congratulations to [Lincen](https://www.lincen.nl/) and [Qi](https://scholar.google.com/citations?user=Hs2PQsYAAAAJ&hl=en).
 - **2026.06**: 🔥🔥 One research paper is accepted by MICCAI: [Efficient Flow Matching for Sparse-View CT Reconstruction](https://arxiv.org/abs/2603.00205). Congratulations to [Jiayang](https://jiayangshi.github.io/).
 - **2026.06**: 🔥🔥 One research paper is accepted by DMKD: [Graph Neural Networks based Log Anomaly Detection and Explanation](http://arxiv.org/abs/2307.00527).
 - **2026.05**: 🔥🔥 One research paper is accepted by ICML: [Constructing Industrial-Scale Optimization Modeling Benchmark](https://arxiv.org/abs/2602.10450)
