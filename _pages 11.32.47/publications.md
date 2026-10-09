@@ -1,0 +1,84 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+You can also find my articles on my <u><a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&hl=en&oi=ao">Google Scholar</a>.</u> My research can be summarised by the following keywords:
+- Methodologies-Oriented: *Generative Models; Flow Matching; Diffusion Models; Unsupervised Machine Learning; Anomaly Detection; Transfer Learning; XAI; Graph Neural Networks*
+- Applications-Oriented: *Log Analysis; Predictive Maintenance; Digital Twin; AI for Manufacturing*
+
+
+## 2026
+
+- **MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling.**
+  - **Zhong Li**, Qi Huang, Yuxuan Zhu, Mohammad Mohammadi Amiri, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen, Zaiwen Wen, Lincen Yang. Under Review for an AI conference. "#" means equal contribution
+ 
+- **OptArgus: A Multi-Agent System to Detect Hallucinations in LLM-based Optimization Modeling.**
+  - **Zhong Li**, Zihan Guo, Xiaohan Lu, Juntao Wang, Jie Song, Chao Shen, Jiageng Wu, Mingyang Sun. Under Review for an AI conference. "#" means equal contribution
+
+- **Latent Space Analaysis for Unsupervised Hyperparameter Optimisation.**
+  - Yuhang Wang #, **Zhong Li #**, Shujian Yu, Matthijs van Leeuwen. Under Review for an AI conference. "#" means equal contribution
+ 
+- **Diffusion and Flow Matching Models for Tabular Data: A Survey.**
+  - **Zhong Li**, Qi Huang, Lincen Yang\*, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen. Under Review for TKDE. "\*" means corresponding author
+  - [[paper]](https://arxiv.org/abs/2502.17119), [[code]](https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data)
+ 
+- **Explainable Graph Neural Networks under Fire.**
+  - **Zhong Li**, Simon Geisler, Yuhang Wang, Stephan Günnemann, Matthijs van Leeuwen. Under Review for an AI conference.
+  - [[paper]](https://arxiv.org/abs/2406.06417), [[code]](https://github.com/ZhongLIFR/GXAttack)
+ 
+- **Constructing Industrial-Scale Optimization Modeling Benchmark.**
+  - **Zhong Li**, Hongliang Lu, Tao Wei, Yuxuan Chen, Wenyu Liu, Yuan Lan, Fan Zhang, Zaiwen Wen. ICML 2026.
+  - [[paper]](https://arxiv.org/abs/2602.10450),  [[code]](https://github.com/optsuite/MIPLIB-NL)
+
+
+## 2025
+ 
+- **Learning Subgroups with Maximum Treatment Effects without Causal Heuristics.**
+  - Lincen Yang, **Zhong Li\***, Matthijs van Leeuwen, Saber Salehkaleybar. AAAI 2026 Oral. "\*" means corresponding author.
+  - [[paper]](https://arxiv.org/abs/2511.20189),  [[code]](https://github.com/ylincen/causal-subgroup)
+
+- **Scalable, Explainable and Provably Robust Anomaly Detection with One-Step Flow Matching.**
+  - **Zhong Li**, Qi Huang, Yuxuan Zhu, Lincen Yang\*, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen. NeurIPS 2025. "\*" means corresponding author.
+  - [[paper]](https://arxiv.org/abs/2510.18328),  [[code]](https://github.com/ZhongLIFR/TCCM-NIPS)
+    
+- **Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection.**
+  - **Zhong Li**, Yuhang Wang, Matthijs van Leeuwen. Data Mining and Knowledge Discovery (DAMI). 39(44): 1-43. (AAAI 2026 Journal Track)
+  - [[paper]](https://link.springer.com/article/10.1007/s10618-025-01115-5), [[code]](https://github.com/ZhongLIFR/AutoGAD2024)
+    
+## 2024
+    
+- **Graph Neural Networks based Log Anomaly Detection and Explanation.**
+  - **Zhong Li**, Jiayang Shi, Matthijs van Leeuwen. ICSE'24 poster track.
+  - [[paper]](https://arxiv.org/abs/2307.00527), [[code]](https://github.com/ZhongLIFR/Logs2Graph) (ArXiv full version)
+  - [[paper]](https://dl.acm.org/doi/pdf/10.1145/3639478.3643084) (ICSE short version)
+    
+- **Cross-Domain Graph Level Anomaly Detection.**
+  - **Zhong Li**, Sheng Liang, Jiayang Shi, Matthijs van Leeuwen. IEEE Transactions on Knowledge and Data Engineering (TKDE). 36(12):7839-7850
+  - [[paper]](https://ieeexplore.ieee.org/document/10684507/keywords#keywords), [[code]](https://github.com/ZhongLIFR/ARMET/)
+
+## 2023
+- **A Survey on Explainable Anomaly Detection.**
+  - **Zhong Li**, Yuxuan Zhu, Matthijs van Leeuwen. ACM Transactions on Knowledge Discovery from Data (TKDD). 23: 1–54.
+  - [[paper]](https://dl.acm.org/doi/10.1145/3609333)
+    
+- **Explainable Contextual Anomaly Detection using Quantile Regression Forests.**
+  - **Zhong Li**, Matthijs van Leeuwen.  Data Mining and Knowledge Discovery (DAMI). 37: 2517–2563.
+  - [[paper]](https://link.springer.com/article/10.1007/s10618-023-00967-z), [[code]](https://github.com/ZhongLIFR/QCAD)
+
+## 2022
+- **Feature Selection for Fault Detection and Prediction based on Log Analysis.**
+  - **Zhong Li**, Matthijs van Leeuwen.  SIGKDD Explorations Newsletter. 24(2): 96–104. 
+  - [[paper]](https://dl.acm.org/doi/10.1145/3575637.3575652)
+    
+- **Choosing and changing the analysis scale in non-inferiority trials with a binary outcome.**
+  - **Zhong Li**, Matteo Quartagno, Stefan Böhringer, and Nan van Geloven. Clinical Trials. 19(1): 14-21. 
+  - [[paper]](https://journals.sagepub.com/doi/full/10.1177/17407745211053790)
+
+<!--{% include base_path %}
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+-->
