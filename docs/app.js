@@ -5,8 +5,7 @@ const root = document.documentElement;
 const themeButton = $('#theme-toggle');
 function themeLabel(){themeButton.setAttribute('aria-label',root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');document.querySelector('meta[name="theme-color"]').content=root.dataset.theme==='dark'?'#1d1f21':'#ffffff';}
 themeLabel();
-themeButton.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('zl-theme',root.dataset.theme)}catch{}themeLabel();document.dispatchEvent(new CustomEvent('themechange',{detail:root.dataset.theme}));});
-const scheme=matchMedia('(prefers-color-scheme: dark)');scheme.addEventListener('change',e=>{let saved;try{saved=localStorage.getItem('zl-theme')}catch{}if(!saved){root.dataset.theme=e.matches?'dark':'light';themeLabel();document.dispatchEvent(new CustomEvent('themechange',{detail:root.dataset.theme}));}});
+themeButton.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('zl-theme-choice',root.dataset.theme)}catch{}themeLabel();document.dispatchEvent(new CustomEvent('themechange',{detail:root.dataset.theme}));});
 const state={collection:'selected',topic:'all',query:'',status:'all'};
 let papers=[];
 const topicGroup = topic => topic === 'LLM' || topic === 'MLLM' ? 'MLLM/LLM' : topic;

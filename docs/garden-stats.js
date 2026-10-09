@@ -1,41 +1,35 @@
+import {createGardenCounter} from './garden-counter.js?v=shared-counts-20261009';
+
 const stats = document.querySelector('.garden-stats');
-if (stats && !stats.hidden) {
-  const endpoint = (stats.dataset.endpoint || '/api/garden').replace(/\/$/, '');
-  let visitor;
-  // Keep one anonymous ID for this browser. Without storage, show shared totals
-  // without manufacturing a new visitor on every page load.
-  try {
-    visitor = localStorage.getItem('zl-garden-visitor');
-    if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(visitor || '')) {
-      visitor = crypto.randomUUID();
-      localStorage.setItem('zl-garden-visitor', visitor);
-    }
-  } catch { visitor = null; }
+if (stats) {
+  let storage;
+  try { storage = localStorage; } catch { /* Read-only counts still work. */ }
+  const counter = createGardenCounter({hostname: location.hostname, storage});
   const formatter = new Intl.NumberFormat('en-US');
-  let latest = 0;
-  async function refresh(action) {
-    const sequence = ++latest;
-    try {
-      const response = await fetch(endpoint + (visitor && action ? `/${action}` : ''), {
-        ...(visitor && action ? {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({visitor})} : {}),
-        cache: 'no-store', signal: AbortSignal.timeout(8000)
-      });
-      if (!response.ok) throw new Error('Counter unavailable');
-      const data = await response.json();
-      if (![data.waterers, data.visitors].every(n => Number.isSafeInteger(n) && n >= 0) || data.waterers > data.visitors) throw new Error('Invalid counts');
-      if (sequence !== latest) return;
-      stats.querySelector('[data-count="waterers"]').textContent = formatter.format(data.waterers);
-      stats.querySelector('[data-count="visitors"]').textContent = formatter.format(data.visitors);
-      stats.dataset.state = 'ready';
-      stats.title = 'Unique browsers since October 2026. Repeat visits and watering do not add to the totals.';
-    } catch {
-      if (sequence !== latest) return;
-      stats.dataset.state = 'unavailable';
-      stats.querySelectorAll('[data-count]').forEach(value => { value.textContent = '—'; });
-      stats.title = 'Counts are temporarily unavailable.';
+  const explanation = 'Visitors counts visits and Watered by counts completed watering contributions, each at most once per browser every 30 minutes. The two counters use separate timers. Counts started in October 2026. Clearing browser data or using another browser may count again. Shared totals provided by Abacus.';
+  const preview = counter.preview ? 'Preview counters, separate from the live website. ' : '';
+  function display(data) {
+    let stale = false;
+    for (const kind of ['waterers', 'visitors']) {
+      const item = data[kind];
+      const element = stats.querySelector(`[data-count="${kind}"]`);
+      const valid = Number.isSafeInteger(item?.value);
+      element.textContent = valid ? formatter.format(item.value) : '—';
+      element.title = item?.stale ? (valid ? `Last available count: ${new Date(item.updated).toLocaleString()}` : 'Temporarily unavailable') : '';
+      stale ||= Boolean(item?.stale);
     }
+    stats.dataset.state = stale ? 'stale' : 'ready';
+    stats.title = preview + explanation + (stale ? ' The service is temporarily unavailable; any displayed numbers are the last successful readings.' : '');
   }
-  document.addEventListener('garden:watered', () => refresh('water'));
-  document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
-  refresh('visit');
+  display(Object.fromEntries(['waterers', 'visitors'].map(kind => [kind, {...counter.cached(kind), stale: true}])));
+  let lastRefresh = 0;
+  async function refresh(action) {
+    lastRefresh = Date.now();
+    display(await counter.refresh(action));
+  }
+  document.addEventListener('garden:watered', () => { void refresh('water'); });
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && Date.now() - lastRefresh > 60000) void refresh('visit');
+  });
+  void refresh('visit');
 }
