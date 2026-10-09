@@ -1,0 +1,554 @@
+[
+  {
+    "id": "p5",
+    "venue": "Preprint",
+    "year": 2026,
+    "status": "review",
+    "topics": [
+      "LLM",
+      "AI4Math",
+      "Optimization Modeling"
+    ],
+    "authors": "Zhong Li#, Xin Huang#, Jinhui Wan, Xiangyi Wang, Shenkai Zhang, Ruiqi Chen, Wenyu Liu, Zaiwen Wen, and Ziyan Luo",
+    "title": "Right Answers, Costly Models: The Efficiency Gap in LLM-based Optimization Modeling",
+    "outlet": "arXiv:2609.38884, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2609.38884",
+    "ranks": [],
+    "presentation": "",
+    "summary": "Correct optimization results do not necessarily imply efficient models. This work introduces OptTips, a collection of 50 expert modeling techniques, and EfficientOpt, a benchmark of 561 tasks with paired conventional and expert implementations. Evaluating 11 LLMs reveals substantial gaps in model construction and solving costs, motivating evaluation of computational efficiency alongside correctness.",
+    "summarySource": "https://arxiv.org/abs/2609.38884",
+    "code": "https://github.com/ZhongLIFR/EfficientOpt",
+    "resources": [
+      {
+        "label": "Data",
+        "url": "https://doi.org/10.5281/zenodo.23093476"
+      }
+    ],
+    "citations": {
+      "count": 0,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:NMlhSUseqAsC"
+    }
+  },
+  {
+    "id": "p6",
+    "venue": "Preprint",
+    "year": 2026,
+    "status": "review",
+    "topics": [
+      "LLM",
+      "AI4Math",
+      "Optimization Modeling"
+    ],
+    "authors": "Zhong Li, Zihan Guo, Xiaohan Lu, Juntao Wang, Jie Song, Chao Shen, Jiageng Wu, and Mingyang Sun",
+    "title": "OptArgus: A Multi-Agent System to Detect Hallucinations in LLM-based Optimization Modeling",
+    "outlet": "arXiv:2605.11738, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2605.11738",
+    "ranks": [],
+    "citations": {
+      "count": 6,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:-yGd096yOn8C"
+    },
+    "presentation": "",
+    "summary": "OptArgus checks whether a problem description, mathematical formulation, and solver implementation express the same optimization problem. Specialist agents audit objectives, variables, constraints, and code, then consolidate their evidence. A benchmark of clean, deliberately corrupted, and naturally generated artifacts evaluates detection and error localization beyond simply matching the reference objective value.",
+    "summarySource": "https://arxiv.org/abs/2605.11738"
+  },
+  {
+    "id": "p7",
+    "venue": "Preprint",
+    "year": 2025,
+    "status": "review",
+    "topics": [
+      "Diffusion / Flow Matching"
+    ],
+    "authors": "Zhong Li, Qi Huang, Lincen Yang, Jiayang Shi, Zhao Yang, Niki van Stein, Thomas Bäck, and Matthijs van Leeuwen",
+    "title": "Diffusion and Flow Matching Models for Tabular Data: A Survey",
+    "outlet": "arXiv:2502.17119, 2025",
+    "note": "",
+    "url": "https://arxiv.org/abs/2502.17119",
+    "ranks": [],
+    "citations": {
+      "count": 34,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:AzKEL7Gb_04C"
+    },
+    "code": "https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data",
+    "presentation": "",
+    "summary": "This survey organizes diffusion and flow-matching methods for tabular data by their tasks, representations, design choices, and evaluation criteria. It covers data synthesis, missing-value imputation, trustworthy generation, and anomaly detection, and discusses challenges involving mixed feature types, dependencies, scalability, privacy, fairness, and domain constraints. An accompanying repository maintains the literature collection.",
+    "summarySource": "https://arxiv.org/abs/2502.17119"
+  },
+  {
+    "id": "p20",
+    "venue": "Preprint",
+    "year": 2024,
+    "status": "review",
+    "topics": [
+      "Graph Learning"
+    ],
+    "authors": "Zhong Li, Simon Geisler, Yuhang Wang, Stephan Günnemann, and Matthijs van Leeuwen",
+    "title": "Explainable Graph Neural Networks Under Fire",
+    "outlet": "arXiv:2406.06417, 2024",
+    "note": "",
+    "url": "https://arxiv.org/abs/2406.06417",
+    "ranks": [],
+    "citations": {
+      "count": 11,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:1tZ8xJnm2c8C"
+    },
+    "code": "https://github.com/ZhongLIFR/GXAttack",
+    "presentation": "",
+    "summary": "GXAttack examines whether explanations of graph neural networks remain stable under small changes to graph structure. Its optimization-based attack preserves a model’s prediction while substantially changing the explanatory subgraph. Experiments expose weaknesses in common post-hoc GNN explainers and motivate evaluating explanation robustness alongside predictive performance.",
+    "summarySource": "https://arxiv.org/abs/2406.06417"
+  },
+  {
+    "id": "p2",
+    "venue": "NeurIPS",
+    "year": 2026,
+    "status": "published",
+    "topics": [
+      "MLLM",
+      "AI4Math",
+      "Optimization Modeling"
+    ],
+    "authors": "Zhong Li, Qi Huang, Yuxuan Zhu, Mohammad Mohammadi Amiri, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen, Zaiwen Wen, and Lincen Yang",
+    "title": "MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling",
+    "outlet": "Proceedings of the 40th Conference on Neural Information Processing Systems, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2605.12154",
+    "ranks": [
+      "CCF A"
+    ],
+    "citations": {
+      "count": 2,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:NxmKEeNBbOMC"
+    },
+    "summary": "MM-OptBench tests optimization modeling from text together with tables, graphs, maps, schedules, and other visual inputs. Its 780 solver-verified instances cover six optimization families and three difficulty levels. Each instance includes a mathematical formulation and executable reference solution, allowing evaluation of both information extraction and the correctness of the resulting optimization model.",
+    "presentation": "Poster",
+    "summarySource": "https://arxiv.org/abs/2605.12154",
+    "code": "https://github.com/ZhongLIFR/MM-OptBench",
+    "resources": [
+      {
+        "label": "Data",
+        "url": "https://github.com/ZhongLIFR/MM-OptBench/tree/main/dataset"
+      }
+    ]
+  },
+  {
+    "id": "p1",
+    "venue": "NeurIPS",
+    "year": 2026,
+    "status": "published",
+    "topics": [
+      "LLM",
+      "AI4Math",
+      "Optimization Modeling"
+    ],
+    "authors": "Hongliang Lu#, Zhong Li#, Yuxuan Chen, Yuan Lan, Fan Zhang, and Zaiwen Wen",
+    "title": "PEARL: Interactive Optimization Modeling with Tool-Integrated Agentic Reinforcement Learning",
+    "outlet": "Proceedings of the 40th Conference on Neural Information Processing Systems, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2607.18256",
+    "ranks": [
+      "CCF A"
+    ],
+    "citations": {
+      "count": 1,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:CNPyR2KL9-0C"
+    },
+    "summary": "PEARL trains optimization-modeling agents to work through repeated execution and revision. The agent can run Python, invoke mathematical solvers, inspect feasibility and diagnostic feedback, and revise its formulation or code before answering. Tool-integrated reinforcement learning improves verified solving performance over one-shot generation and other evaluated baselines.",
+    "presentation": "Poster",
+    "summarySource": "https://arxiv.org/abs/2607.18256",
+    "code": "https://github.com/AuroraLHL/PEARL",
+    "resources": [
+      {
+        "label": "Model",
+        "url": "https://huggingface.co/Aurora-Gem/PEARL-Qwen3-4B-Instruct-2507"
+      }
+    ]
+  },
+  {
+    "id": "p9",
+    "venue": "NeurIPS",
+    "year": 2026,
+    "status": "published",
+    "topics": [],
+    "authors": "Lincen Yang, Jiayang Shi, Nan Pu, Daniel Pelt, Matthijs van Leeuwen, Zhong Li*, and Shujian Yu*",
+    "title": "Does Compression Imply Generalization? A Minimum Description Length Perspective",
+    "outlet": "Proceedings of the 40th Conference on Neural Information Processing Systems, 2026",
+    "note": "",
+    "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/151042",
+    "ranks": [
+      "CCF A"
+    ],
+    "presentation": "Poster",
+    "summary": "This work studies neural-network generalization through the minimum description length principle. It proposes prequential regret, computed from the training trajectory, as a compression signal and connects it to parameter description length and PAC-MDL generalization bounds in the nearly interpolating regime. Experiments on CIFAR-10 and CIFAR-100 examine how well this signal tracks generalization error.",
+    "summarySource": "https://neurips.cc/virtual/2026/loc/sydney/poster/151042",
+    "resources": [
+      {
+        "label": "OpenReview",
+        "url": "https://openreview.net/forum?id=dQ36O5uJBs"
+      }
+    ]
+  },
+  {
+    "id": "p10",
+    "venue": "NeurIPS",
+    "year": 2026,
+    "status": "published",
+    "topics": [
+      "Subgroup Discovery"
+    ],
+    "authors": "Lincen Yang, Qi Huang, Niki van Stein, Thomas Bäck, Matthijs van Leeuwen, and Zhong Li*",
+    "title": "Optimal Subgroup Discovery at Every Support Threshold",
+    "outlet": "Proceedings of the 40th Conference on Neural Information Processing Systems, 2026",
+    "note": "Spotlight",
+    "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/149258",
+    "ranks": [
+      "CCF A"
+    ],
+    "presentation": "Spotlight",
+    "summary": "Subgroup discovery must balance how strongly a group differs from the overall population against how many examples it contains. This work characterizes optimal subgroups under arbitrary support constraints using homogeneous partitions of the feature space. A practical partition-learning and greedy-selection procedure is evaluated across 19 datasets and can also improve subgroups found by existing methods.",
+    "summarySource": "https://neurips.cc/virtual/2026/loc/sydney/poster/149258",
+    "resources": [
+      {
+        "label": "OpenReview",
+        "url": "https://openreview.net/forum?id=rheTYmImAU"
+      }
+    ]
+  },
+  {
+    "id": "p3",
+    "venue": "ICML",
+    "year": 2026,
+    "status": "published",
+    "topics": [
+      "LLM",
+      "AI4Math",
+      "Optimization Modeling"
+    ],
+    "authors": "Zhong Li#, Hongliang Lu#, Tao Wei#, Yuxuan Chen#, Wenyu Liu, Yuan Lan, Fan Zhang, and Zaiwen Wen",
+    "title": "Constructing Industrial-Scale Optimization Modeling Benchmark",
+    "outlet": "Proceedings of the 43rd International Conference on Machine Learning, PMLR, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2602.10450",
+    "ranks": [
+      "CCF A"
+    ],
+    "citations": {
+      "count": 12,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:c1e4I3QdEKYC"
+    },
+    "code": "https://github.com/optsuite/MIPLIB-NL",
+    "summary": "MIPLIB-NL brings industrial-scale optimization into language-model evaluation. A structure-aware reverse-construction process produces 223 natural-language reconstructions of real mixed-integer linear programs from MIPLIB 2017. Expert review and reconstruction checks preserve their mathematical content, revealing modeling failures that are difficult to detect with smaller or synthetic benchmarks.",
+    "presentation": "Poster",
+    "summarySource": "https://arxiv.org/abs/2602.10450",
+    "resources": [
+      {
+        "label": "Data",
+        "url": "https://github.com/optsuite/MIPLIB-NL/tree/main/dataset"
+      }
+    ]
+  },
+  {
+    "id": "p11",
+    "venue": "AAAI",
+    "year": 2026,
+    "status": "published",
+    "topics": [
+      "Subgroup Discovery"
+    ],
+    "authors": "Lincen Yang, Zhong Li*, Matthijs van Leeuwen, and Saber Salehkaleybar",
+    "title": "Learning Subgroups with Maximum Treatment Effects without Causal Heuristics",
+    "outlet": "Proceedings of the 40th AAAI Conference on Artificial Intelligence, 2026",
+    "note": "Oral presentation",
+    "url": "https://arxiv.org/abs/2511.20189",
+    "ranks": [
+      "CCF A"
+    ],
+    "citations": {
+      "count": 1,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:MIg0yeAD4ggC"
+    },
+    "code": "https://github.com/ylincen/causal-subgroup",
+    "presentation": "Oral",
+    "summary": "This work studies subgroups with the largest treatment effects using a partition-based structural causal model. Under its assumptions, finding the optimal subgroup reduces to recovering the underlying partitions through ordinary supervised learning. A CART-based implementation is evaluated on synthetic and semi-synthetic data, avoiding the specialized causal heuristics used by many existing methods.",
+    "summarySource": "https://arxiv.org/abs/2511.20189",
+    "resources": [
+      {
+        "label": "Data",
+        "url": "https://github.com/ylincen/causal-subgroup/tree/main/datasets"
+      }
+    ]
+  },
+  {
+    "id": "p12",
+    "venue": "DMKD",
+    "year": 2026,
+    "status": "published",
+    "topics": [
+      "Anomaly Detection",
+      "Graph Learning",
+      "Smart Manufacturing"
+    ],
+    "authors": "Zhong Li, Jiayang Shi, and Matthijs van Leeuwen",
+    "title": "Graph Neural Networks based Log Anomaly Detection and Explanation",
+    "outlet": "Data Mining and Knowledge Discovery, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2307.00527",
+    "ranks": [
+      "CORE A",
+      "CCF B"
+    ],
+    "citations": {
+      "count": 90,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:H_jBuBxbQIAC"
+    },
+    "code": "https://github.com/ZhongLIFR/Logs2Graph",
+    "presentation": "",
+    "summary": "Logs2Graphs converts event logs into attributed, directed, weighted graphs to capture relationships beyond event counts or sequences. A one-class graph neural network learns representations for detecting anomalous log groups. For each detected anomaly, the method also identifies influential nodes as an explanation, providing clues for subsequent root-cause analysis.",
+    "summarySource": "https://arxiv.org/abs/2307.00527",
+    "resources": [
+      {
+        "label": "Data",
+        "url": "https://doi.org/10.5281/zenodo.7771548"
+      }
+    ]
+  },
+  {
+    "id": "p4",
+    "venue": "NeurIPS",
+    "year": 2025,
+    "status": "published",
+    "topics": [
+      "Diffusion / Flow Matching",
+      "Anomaly Detection"
+    ],
+    "authors": "Zhong Li, Qi Huang, Yuxuan Zhu, Lincen Yang, Mohammad Mohammadi Amiri, Niki van Stein, and Matthijs van Leeuwen",
+    "title": "Scalable, Explainable and Provably Robust Anomaly Detection with One-Step Flow Matching",
+    "outlet": "Proceedings of the 39th Conference on Neural Information Processing Systems, 2025",
+    "note": "Poster.",
+    "url": "https://arxiv.org/abs/2510.18328",
+    "ranks": [
+      "CCF A"
+    ],
+    "citations": {
+      "count": 20,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:-6RzNnnwWf8C"
+    },
+    "code": "https://github.com/ZhongLIFR/TCCM-NIPS",
+    "presentation": "Poster",
+    "summary": "Time-Conditioned Contraction Matching (TCCM) adapts flow matching for semi-supervised anomaly detection in tabular data. It learns contraction toward a fixed target and scores anomalies with a single forward pass, avoiding iterative ODE solving. Feature-level contributions support explanations, while a Lipschitz-continuity analysis establishes robustness of the score to small input perturbations.",
+    "summarySource": "https://arxiv.org/abs/2510.18328",
+    "resources": [
+      {
+        "label": "Data",
+        "url": "https://github.com/ZhongLIFR/TCCM-NIPS/tree/main/datasets"
+      },
+      {
+        "label": "OpenReview",
+        "url": "https://openreview.net/forum?id=jDYuadVajk"
+      }
+    ]
+  },
+  {
+    "id": "p13",
+    "venue": "DMKD",
+    "year": 2025,
+    "status": "published",
+    "topics": [
+      "Anomaly Detection",
+      "Graph Learning"
+    ],
+    "authors": "Zhong Li, Yuhang Wang, and Matthijs van Leeuwen",
+    "title": "Automated Self-Supervised Learning for Graph Anomaly Detection",
+    "outlet": "Data Mining and Knowledge Discovery, 2025",
+    "note": "",
+    "url": "https://link.springer.com/article/10.1007/s10618-025-01115-5",
+    "ranks": [
+      "CORE A",
+      "CCF B"
+    ],
+    "citations": {
+      "count": 5,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:T_ojBgVMvoEC"
+    },
+    "code": "https://github.com/ZhongLIFR/AutoGAD2024",
+    "presentation": "",
+    "summary": "AutoGAD addresses hidden label leakage when selecting self-supervised strategies and hyperparameters for supposedly unsupervised graph anomaly detection. It uses an internal evaluation criterion to select configurations without ground-truth anomaly labels. Experiments with ten graph anomaly detectors assess both the impact of label-guided selection and the effectiveness of the proposed alternative.",
+    "summarySource": "https://link.springer.com/article/10.1007/s10618-025-01115-5",
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s10618-025-01115-5.pdf"
+  },
+  {
+    "id": "p14",
+    "venue": "TKDE",
+    "year": 2024,
+    "status": "published",
+    "topics": [
+      "Anomaly Detection",
+      "Graph Learning"
+    ],
+    "authors": "Zhong Li, Sheng Liang, Jiayang Shi, and Matthijs van Leeuwen",
+    "title": "Cross-Domain Graph Level Anomaly Detection",
+    "outlet": "IEEE Transactions on Knowledge and Data Engineering, 2024",
+    "note": "",
+    "url": "https://ieeexplore.ieee.org/document/10684507",
+    "ranks": [
+      "CCF A"
+    ],
+    "citations": {
+      "count": 16,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:eGYfIraVYiQC"
+    },
+    "code": "https://github.com/ZhongLIFR/ARMET/",
+    "presentation": "",
+    "summary": "ARMET detects anomalous graphs in an unlabeled target domain using normal graphs from a related source domain. It combines graph representation learning, adversarial domain alignment, one-class classification, and pseudo-label-based class alignment. The approach reduces reliance on clean target-domain training data and is evaluated on seven benchmark datasets.",
+    "summarySource": "https://ieeexplore.ieee.org/document/10684507",
+    "resources": [
+      {
+        "label": "Data",
+        "url": "https://doi.org/10.5281/zenodo.8246213"
+      }
+    ]
+  },
+  {
+    "id": "p15",
+    "venue": "TKDD",
+    "year": 2024,
+    "status": "published",
+    "topics": [
+      "Anomaly Detection"
+    ],
+    "authors": "Zhong Li, Yuxuan Zhu, and Matthijs van Leeuwen",
+    "title": "A Survey on Explainable Anomaly Detection",
+    "outlet": "ACM Transactions on Knowledge Discovery from Data, 2024",
+    "note": "ESI Highly Cited Paper.",
+    "url": "https://dl.acm.org/doi/10.1145/3609333",
+    "ranks": [
+      "CCF B"
+    ],
+    "citations": {
+      "count": 333,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:-DxkuPiZhfEC"
+    },
+    "presentation": "",
+    "summary": "This survey reviews methods that explain anomaly detections and organizes them through a structured taxonomy. It distinguishes explanations of detection models from explanations of anomalous data and discusses how different techniques serve different needs. The resulting overview helps researchers and practitioners identify suitable methods for making anomaly analysis more interpretable.",
+    "summarySource": "https://arxiv.org/abs/2210.06959",
+    "pdf": "https://arxiv.org/pdf/2210.06959"
+  },
+  {
+    "id": "p16",
+    "venue": "DMKD",
+    "year": 2023,
+    "status": "published",
+    "topics": [
+      "Anomaly Detection"
+    ],
+    "authors": "Zhong Li and Matthijs van Leeuwen",
+    "title": "Explainable Contextual Anomaly Detection using Quantile Regression Forests",
+    "outlet": "Data Mining and Knowledge Discovery, 2023",
+    "note": "",
+    "url": "https://link.springer.com/article/10.1007/s10618-023-00967-z",
+    "ranks": [
+      "CORE A",
+      "CCF B"
+    ],
+    "citations": {
+      "count": 57,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:YlPif8NxrbYC"
+    },
+    "code": "https://github.com/ZhongLIFR/QCAD",
+    "presentation": "",
+    "summary": "QCAD detects unusual behavior relative to an object’s context rather than treating all features alike. It uses quantile regression forests to model dependencies between contextual and behavioral features, producing interpretable anomaly scores. Experiments on synthetic and real-world tabular datasets evaluate detection accuracy together with the usefulness of the resulting explanations.",
+    "summarySource": "https://link.springer.com/article/10.1007/s10618-023-00967-z",
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s10618-023-00967-z.pdf"
+  },
+  {
+    "id": "p17",
+    "venue": "KDD Explor.",
+    "year": 2022,
+    "status": "published",
+    "topics": [
+      "Anomaly Detection",
+      "Smart Manufacturing"
+    ],
+    "authors": "Zhong Li and Matthijs van Leeuwen",
+    "title": "Feature Selection for Fault Detection and Prediction based on Event Log Analysis",
+    "outlet": "ACM SIGKDD Explorations Newsletter, 2022",
+    "note": "",
+    "url": "https://dl.acm.org/doi/10.1145/3575637.3575652",
+    "ranks": [],
+    "citations": {
+      "count": 21,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:X9ykpCP0fEIC"
+    },
+    "presentation": "",
+    "summary": "Event logs from complex industrial systems can contain thousands of event types, many of which are irrelevant to a particular subsystem. This work develops feature selection for log-based fault detection and prediction. By focusing on the relevant event-derived features, it aims to improve detection effectiveness while reducing the cost of analyzing large log representations.",
+    "summarySource": "https://arxiv.org/abs/2208.09440",
+    "pdf": "https://kdd.org/exploration_files/p96-AI4Manufacturing_paper2.pdf"
+  },
+  {
+    "id": "p18",
+    "venue": "Clinical Trials",
+    "year": 2021,
+    "status": "published",
+    "topics": [
+      "Healthcare"
+    ],
+    "authors": "Zhong Li, Matteo Quartagno, Stefan Böhringer, and Nan van Geloven",
+    "title": "Choosing and Changing the Analysis Scale in Non-Inferiority Trials with a Binary Outcome",
+    "outlet": "Clinical Trials, 2021",
+    "note": "",
+    "url": "https://journals.sagepub.com/doi/full/10.1177/17407745211053790",
+    "ranks": [],
+    "citations": {
+      "count": 13,
+      "source": "Google Scholar",
+      "snapshot": "2026-10-09",
+      "scholarId": "m5u8VlIAAAAJ:qwy9JoKyICEC"
+    },
+    "presentation": "",
+    "summary": "This study compares risk-difference, risk-ratio, and odds-ratio scales in non-inferiority trials with binary outcomes. It examines how the choice of scale affects sample size, then uses simulations and the INES trial to study changes made after trial design. Mapping margins using observed control outcomes can distort type I error rates.",
+    "summarySource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8847766/",
+    "pdf": "https://discovery.ucl.ac.uk/id/eprint/10135781/1/NI_Sample_Size_Calculation_210715_2.pdf",
+    "resources": [
+      {
+        "label": "Full text",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8847766/"
+      },
+      {
+        "label": "Supplement",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8847766/bin/sj-pdf-1-ctj-10.1177_17407745211053790.pdf"
+      }
+    ]
+  }
+]
