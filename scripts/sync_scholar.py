@@ -7,7 +7,7 @@ Only existing public papers are updated. Failed requests retain the last snapsho
 import argparse
 import copy
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 import json
 import os
@@ -194,18 +194,42 @@ def merge_metrics(papers, profile, config, now):
     return updated, stats, sorted(unmatched)
 
 
+def html_citation_snapshot(html, stats):
+    """Keep the dated fallback accurate even when JavaScript is unavailable."""
+    if not is_count(stats['totalCitations']):
+        raise SyncError('Invalid HTML citation count.')
+    snapshot = date.fromisoformat(stats['snapshot'])
+    month = ('January February March April May June July August September October November December'.split())[snapshot.month - 1]
+    stamp = f'{snapshot.day} {month} {snapshot.year}' if stats.get('lastSuccessfulSync') else f'{month} {snapshot.year}'
+    values = {
+        'scholar-citation-total': f"{stats['totalCitations']:,}{'+' if stats.get('isLowerBound') else ''} Google Scholar citations",
+        'scholar-citation-date': f'(as of {stamp})',
+    }
+    for element_id, value in values.items():
+        pattern = rf'(<(?:a|span)\b[^>]*\bid="{element_id}"[^>]*>)[^<]*(</(?:a|span)>)'
+        html, matches = re.subn(pattern, lambda match: match[1] + value + match[2], html)
+        if matches != 1:
+            raise SyncError('HTML citation fields were missing or duplicated; previous data retained.')
+    return html
+
+
 def sync(root, fetch=fetch_profile, now=None):
     config = json.loads((root / 'scholar-config.json').read_text())
     publications = root / 'docs/publications.json'
     papers = json.loads(publications.read_text())
     profile = fetch(config)
     updated, stats, unmatched = merge_metrics(papers, profile, config, now or datetime.now(timezone.utc))
-    # Prepare both files before replacing either. The workflow commits and deploys
-    # only after validation; a rejected response cannot overwrite either snapshot.
+    homepage = root / 'docs/index.html'
+    html = html_citation_snapshot(homepage.read_text(), stats)
+    # Validate all content before writing. The workflow commits and deploys only
+    # after checks; a rejected response cannot overwrite the previous snapshot.
+    outputs = [(path, json.dumps(value, ensure_ascii=False, indent=2) + '\n')
+               for path, value in ((publications, updated), (root / 'docs/scholar-stats.json', stats))]
+    outputs.append((homepage, html))
     prepared = []
-    for path, value in ((publications, updated), (root / 'docs/scholar-stats.json', stats)):
+    for path, content in outputs:
         temporary = path.with_suffix(path.suffix + '.tmp')
-        temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
+        temporary.write_text(content)
         prepared.append((temporary, path))
     for temporary, path in prepared:
         temporary.replace(path)

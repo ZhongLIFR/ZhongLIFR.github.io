@@ -9,11 +9,12 @@ from unittest.mock import patch
 from urllib.error import HTTPError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from sync_scholar import SyncError, fetch_profile, merge_metrics, parse_profile, sync
+from sync_scholar import SyncError, fetch_profile, html_citation_snapshot, merge_metrics, parse_profile, sync
 
 AUTHOR = 'm5u8VlIAAAAJ'
 NOW = datetime(2026, 10, 9, tzinfo=timezone.utc)
 CONFIG = {'author_id': AUTHOR, 'author_name': 'Zhong Li', 'minimum_matches': 1}
+HOMEPAGE = '<p>Biography <a id="scholar-citation-total" href="https://scholar.google.com/">620+ Google Scholar citations</a> <span id="scholar-citation-date">(as of October 2026)</span>.</p>'
 
 
 def article(title='A Model', count=51, suffix='abc'):
@@ -90,24 +91,43 @@ class CitationSyncTests(unittest.TestCase):
         with self.assertRaises(SyncError):
             merge_metrics(self.papers, profile(), CONFIG, NOW)
 
-    def test_failure_retains_both_files_then_success_updates_together(self):
+    def test_failure_retains_all_files_then_success_updates_together(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / 'docs').mkdir()
             (root / 'scholar-config.json').write_text(json.dumps(CONFIG))
             pub = root / 'docs/publications.json'
             stats = root / 'docs/scholar-stats.json'
+            homepage = root / 'docs/index.html'
             pub.write_text(json.dumps(self.papers))
             stats.write_text('{"totalCitations":620}')
-            before = (pub.read_bytes(), stats.read_bytes())
+            homepage.write_text(HOMEPAGE)
+            files = [pub, stats, homepage]
+            before = [p.read_bytes() for p in files]
             def failure(_):
                 raise SyncError('Service unavailable')
             with self.assertRaises(SyncError):
                 sync(root, fetch=failure, now=NOW)
-            self.assertEqual((pub.read_bytes(), stats.read_bytes()), before)
+            self.assertEqual([p.read_bytes() for p in files], before)
+            homepage.write_text(HOMEPAGE.replace('scholar-citation-date', 'missing-field'))
+            malformed = [p.read_bytes() for p in files]
+            with self.assertRaises(SyncError):
+                sync(root, fetch=lambda _: profile(), now=NOW)
+            self.assertEqual([p.read_bytes() for p in files], malformed)
+            homepage.write_text(HOMEPAGE)
             sync(root, fetch=lambda _: profile(), now=NOW)
             self.assertEqual(json.loads(stats.read_text())['totalCitations'], 900)
             self.assertEqual(json.loads(pub.read_text())[0]['citations']['snapshot'], '2026-10-09')
+            self.assertIn('900 Google Scholar citations', homepage.read_text())
+            self.assertIn('(as of 9 October 2026)', homepage.read_text())
+
+    def test_html_fallback_preserves_markup_and_rejects_missing_or_duplicate_fields(self):
+        stats = {'totalCitations': 1234, 'snapshot': '2026-10-13', 'lastSuccessfulSync': '2026-10-13T00:00:00+00:00'}
+        expected = HOMEPAGE.replace('620+', '1,234').replace('as of October 2026', 'as of 13 October 2026')
+        self.assertEqual(html_citation_snapshot(HOMEPAGE, stats), expected)
+        for markup in [HOMEPAGE + HOMEPAGE, HOMEPAGE.replace('scholar-citation-total', 'missing')]:
+            with self.assertRaises(SyncError):
+                html_citation_snapshot(markup, stats)
 
     def test_http_restrictions_stop_without_retry(self):
         with patch('sync_scholar.urlopen', side_effect=HTTPError('https://scholar.google.com/', 429, 'Limited', {}, None)) as request:

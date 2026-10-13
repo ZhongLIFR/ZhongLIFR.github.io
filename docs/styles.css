@@ -14,9 +14,8 @@
   --venue-text: #fff;
   --paper-ink: #111;
   /* Research-topic palette from the English and Chinese CVs. */
-  --topic-generative: #c45a00;
-  --topic-data-mining: #18735a;
-  --topic-applications: #2f73af;
+  --topic-ai4or: #7b2cbf;
+  --topic-data-mining: #0000ff;
   color-scheme: light;
 }
 :root[data-theme="dark"] {
@@ -32,6 +31,8 @@
   --venue-fill: #ff6c0c;
   --venue-text: #fff;
   --paper-ink: #f1f1f1;
+  --topic-ai4or: #cdabeb;
+  --topic-data-mining: #a8b8ff;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -121,8 +122,14 @@ h1 span { font-size: 21px; font-weight: 400; margin-left: 6px; }
 .bio p { font-size: 15px; line-height: 1.65; margin-bottom: 15px; text-wrap: pretty; }
 .bio a { text-decoration: underline; text-underline-offset: 2px; }
 .research-interests h3 { font-size: 17px; margin-bottom: 9px; }
-.research-interests ul { margin: 0; padding-left: 20px; }
-.research-interests li { padding-left: 1px; margin-bottom: 6px; }
+[data-area="ai4or"] { --topic-color: var(--topic-ai4or); }
+[data-area="data-mining"] { --topic-color: var(--topic-data-mining); }
+.research-direction { color: var(--topic-color); }
+.research-interest-group { display: grid; grid-template-columns: 160px minmax(0, 1fr); align-items: start; gap: 8px 16px; margin-top: 12px; }
+.research-interest-group h4 { font-size: 13px; line-height: 1.5; margin: 2px 0 0; color: var(--topic-color); }
+.research-interests .interest-tags { display: flex; flex-wrap: wrap; gap: 7px 6px; list-style: none; margin: 0; padding: 0; }
+.research-interests .interest-tags li { margin: 0; padding: 0; }
+.interest-tags .topic-tag { display: inline-block; }
 .news-section { margin-top: 30px; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 10px; margin-bottom: 17px; border-bottom: 1px solid var(--line); }
 .section-heading .text-link { font-size: 13px; }
@@ -181,11 +188,7 @@ h1 span { font-size: 21px; font-weight: 400; margin-left: 6px; }
 .paper-outlet { font-size: 14px; line-height: 1.6; font-style: italic; color: var(--paper-ink); margin: 0 0 8px; }
 .paper-topics { display: flex; flex-wrap: wrap; gap: 5px; }
 .topic-tag { color: var(--topic-color, var(--muted)); border: 1px solid currentColor; background: transparent; border-radius: 2px; font-size: 11px; line-height: 1.5; padding: 2px 6px; }
-.topic-tag:is([data-topic="LLM"], [data-topic="MLLM"], [data-topic="Diffusion / Flow Matching"]) { --topic-color: var(--topic-generative); }
-.topic-tag:is([data-topic="Anomaly Detection"], [data-topic="Graph Learning"], [data-topic="Subgroup Discovery"]) { --topic-color: var(--topic-data-mining); }
-.topic-tag:is([data-topic="AI4Math"], [data-topic="Optimization Modeling"], [data-topic="Smart Manufacturing"], [data-topic="Healthcare"]) { --topic-color: var(--topic-applications); }
-.topic-tag:hover { text-decoration: underline; text-underline-offset: 2px; }
-[data-theme="dark"] .topic-tag { color: color-mix(in srgb, var(--topic-color, var(--muted)) 65%, white); }
+button.topic-tag:hover { text-decoration: underline; text-underline-offset: 2px; }
 .paper-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 11px; }
 .paper-links button, .paper-links a { font-size: 12px; line-height: 1.5; color: var(--paper-ink); padding: 3px 6px; border: 1px solid var(--paper-ink); border-radius: 2px; }
 .paper-links button:hover, .paper-links a:hover { background: var(--soft); text-decoration: none; }
@@ -276,7 +279,7 @@ dialog pre { font-size: 12px; line-height: 1.7; white-space: pre-wrap; overflow-
   #sunflower-stage { height: 165px; }
   .intro-heading, .section-heading h2 { font-size: 21px; }
   .bio p { font-size: 15px; }
-  .research-interests li { font-size: 14px; }
+  .research-interest-group { grid-template-columns: minmax(0, 1fr); gap: 6px; margin-top: 14px; }
   .news-item { grid-template-columns: 69px minmax(0,1fr); gap: 10px; }
   .news-item time { font-size: 12px; }
   .news-item p { font-size: 14px; }

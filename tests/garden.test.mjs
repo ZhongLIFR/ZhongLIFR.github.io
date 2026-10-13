@@ -36,6 +36,27 @@ test('counts are shared; reloads and repeated watering do not increment again', 
   assert.equal((await another.refresh()).waterers.value, 1);
   assert.equal(service.calls.filter(c => c.operation === 'hit').length, 3);
 });
+test('a new release retains existing totals and cooldowns, then adds to the same counters', async () => {
+  const service = backend(), storage = memory(), time = 1000000;
+  const keys = ['garden-20261009-visitors', 'garden-20261009-waterers'];
+  // These are fixture totals from before a deployment, not production writes.
+  service.counts.set(keys[0], 237);
+  service.counts.set(keys[1], 86);
+  for (const kind of ['visitors', 'waterers']) storage.setItem(prefix + kind, JSON.stringify({state:'done', at:time}));
+  const returning = createGardenCounter({hostname, storage, fetcher:service.fetcher, now:()=>time});
+  const retained = await returning.refresh('water');
+  assert.equal(retained.visitors.value, 237);
+  assert.equal(retained.waterers.value, 86);
+  const newcomer = createGardenCounter({hostname, storage:memory(), fetcher:service.fetcher, now:()=>time});
+  const readOnly = await newcomer.refresh();
+  assert.equal(readOnly.visitors.value, 237);
+  assert.equal(readOnly.waterers.value, 86);
+  const added = await newcomer.refresh('water');
+  assert.equal(added.visitors.value, 238);
+  assert.equal(added.waterers.value, 87);
+  assert(service.calls.every(call => keys.includes(call.key) && ['get', 'hit'].includes(call.operation)));
+  assert.equal(service.counts.size, 2, 'Deployment must not start new counter keys');
+});
 test('preview writes never touch production counters', async () => {
   const service = backend();
   await createGardenCounter({hostname:'localhost', storage: memory(), fetcher: service.fetcher}).refresh('water');

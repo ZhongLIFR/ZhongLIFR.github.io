@@ -1,4 +1,5 @@
 import { isPublicPaper, isSelectedPaper, publicPaper, presentationFor, citationFor, resourceLinksFor } from './publication-metadata.js?v=paper-resources-20261008';
+import { researchAreas, topicGroup, matchesResearchFilter, researchFilterGroups } from './research-taxonomy.js?v=20261013';
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const root = document.documentElement;
@@ -8,7 +9,10 @@ themeLabel();
 themeButton.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('zl-theme-choice',root.dataset.theme)}catch{}themeLabel();document.dispatchEvent(new CustomEvent('themechange',{detail:root.dataset.theme}));});
 const state={collection:'selected',topic:'all',query:'',status:'all'};
 let papers=[];
-const topicGroup = topic => topic === 'LLM' || topic === 'MLLM' ? 'MLLM/LLM' : topic;
+$('#research-interest-groups').innerHTML=researchAreas.map(area=>`<div class="research-interest-group" data-area="${area.id}"><h4>${area.label}</h4><ul class="interest-tags">${area.interests.map(topic=>`<li><span class="topic-tag">${escape(topic)}</span></li>`).join('')}</ul></div>`).join('');
+function renderTopicOptions(){
+ $('#topic-filter').innerHTML='<option value="all">All topics</option>'+researchFilterGroups(papers).map(group=>`<optgroup label="${escape(group.label)}">${group.options.map(option=>`<option value="${escape(option.value)}">${escape(option.label)}</option>`).join('')}</optgroup>`).join('');
+}
 function formatAuthors(authors){return escape(authors).replace(/Zhong Li/g,'<strong>Zhong Li</strong>').replace(/([#*])/g,'<sup>$1</sup>');}
 function compactMetadata(p){
  const ranks=p.status==='published'?(p.ranks||[]):[];
@@ -21,7 +25,7 @@ function compactMetadata(p){
 }
 function render(){
  const q=state.query.trim().toLowerCase();
- const filtered=papers.filter(p=>(state.collection==='all'||isSelectedPaper(p))&&(state.topic==='all'||p.topics.some(topic=>topicGroup(topic)===state.topic))&&(state.status==='all'||p.status===state.status)&&(!q||[p.title,p.authors,p.venue,p.year,presentationFor(p),...p.topics].join(' ').toLowerCase().includes(q)));
+ const filtered=papers.filter(p=>(state.collection==='all'||isSelectedPaper(p))&&matchesResearchFilter(p,state.topic)&&(state.status==='all'||p.status===state.status)&&(!q||[p.title,p.authors,p.venue,p.year,presentationFor(p),researchAreas.find(area=>area.id===p.researchArea)?.fullLabel,...p.topics.map(topicGroup),...p.topics].join(' ').toLowerCase().includes(q)));
  document.querySelectorAll('[data-collection]').forEach(b=>{const active=b.dataset.collection===state.collection;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',active);b.querySelector('span').textContent=b.dataset.collection==='all'?papers.length:papers.filter(isSelectedPaper).length});
  $('#show-all-papers').innerHTML=`View all ${papers.length} papers <span>↓</span>`;
  $('#topic-filter').value=state.topic;
@@ -35,7 +39,7 @@ function render(){
   const recognition=p.status==='published'&&/highly cited/i.test(p.note)?'Highly cited':'';
   const venueLabels=`<span class="venue-badge">${escape(p.venue)}</span>${presentation?`<span class="presentation-badge" data-presentation="${presentation}">${presentation}</span>`:''}${compactMetadata(p)}${recognition?`<span class="award-badge">${recognition}</span>`:''}${p.status==='review'?'<span class="review-badge">Under review</span>':''}`;
   const buttons=[p.summary?`<button data-summary="${p.id}" aria-expanded="false" aria-controls="summary-${p.id}">Summary <span>+</span></button>`:'',...resourceLinksFor(p).map(({label,url})=>`<a href="${escape(url)}" target="_blank" rel="noopener">${escape(label)} ↗</a>`),`<button data-cite="${p.id}">BibTeX</button>`].join('');
-  return year+`<article class="paper" data-id="${p.id}" data-status="${p.status}"><div class="paper-venue">${venueLabels}</div><div class="paper-content"><h3>${p.url?`<a href="${escape(p.url)}" target="_blank" rel="noopener">${escape(p.title)}</a>`:escape(p.title)}</h3><p class="paper-authors">${formatAuthors(p.authors)}</p>${p.outlet?`<p class="paper-outlet">${escape(p.outlet)}</p>`:''}<div class="paper-topics">${p.topics.map(t=>`<button class="topic-tag" data-topic="${escape(t)}" aria-label="Filter by ${escape(topicGroup(t))}">${escape(t)}</button>`).join('')}</div><div class="paper-links">${buttons}</div>${p.summary?`<div class="paper-summary" id="summary-${p.id}" hidden><p>${escape(p.summary)}</p><a href="${escape(p.summarySource || p.url)}" target="_blank" rel="noopener">Read the original abstract ↗</a></div>`:''}</div></article>`;
+  return year+`<article class="paper" data-id="${p.id}" data-status="${p.status}" data-area="${escape(p.researchArea)}"><div class="paper-venue">${venueLabels}</div><div class="paper-content"><h3>${p.url?`<a href="${escape(p.url)}" target="_blank" rel="noopener">${escape(p.title)}</a>`:escape(p.title)}</h3><p class="paper-authors">${formatAuthors(p.authors)}</p>${p.outlet?`<p class="paper-outlet">${escape(p.outlet)}</p>`:''}<div class="paper-topics">${p.topics.map(t=>`<button class="topic-tag" data-topic="${escape(t)}" aria-label="Filter by ${escape(topicGroup(t))}">${escape(t)}</button>`).join('')}</div><div class="paper-links">${buttons}</div>${p.summary?`<div class="paper-summary" id="summary-${p.id}" hidden><p>${escape(p.summary)}</p><a href="${escape(p.summarySource || p.url)}" target="_blank" rel="noopener">Read the original abstract ↗</a></div>`:''}</div></article>`;
  }).join('')||'<div class="empty-results"><p>No papers match these filters.</p><button id="reset-filters">Reset filters</button></div>';
 }
 function topicFilter(topic){state.topic=topicGroup(topic);state.collection='all';render();}
@@ -93,7 +97,7 @@ const navigationLayout=new ResizeObserver(()=>{
 navigationLayout.observe(header);
 navigationLayout.observe($('#main'));
 updateNavigation();
-try{const response=await fetch('publications.json', {cache:'no-cache'});if(!response.ok)throw Error('Publication data unavailable');papers=(await response.json()).filter(isPublicPaper).map(publicPaper);render();}catch(error){$('#paper-count').textContent='Publication list unavailable';$('#paper-list').innerHTML='<p class="empty-results">Please reload, or view my <a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.</p>';$('#show-all-papers').hidden=true;console.error(error);}
+try{const response=await fetch('publications.json', {cache:'no-cache'});if(!response.ok)throw Error('Publication data unavailable');papers=(await response.json()).filter(isPublicPaper).map(publicPaper);renderTopicOptions();render();}catch(error){$('#paper-count').textContent='Publication list unavailable';$('#paper-list').innerHTML='<p class="empty-results">Please reload, or view my <a href="https://scholar.google.com/citations?user=m5u8VlIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.</p>';$('#show-all-papers').hidden=true;console.error(error);}
 // Resolve the initial section after the asynchronous paper list sets the page height.
 const initialSection = document.getElementById(location.hash.slice(1));
 if (initialSection) requestAnimationFrame(() => initialSection.scrollIntoView({behavior:'instant',block:'start'}));

@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 from urllib.parse import unquote, urlsplit
+from sync_scholar import html_citation_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'docs'
@@ -53,6 +54,8 @@ def main():
     papers = json.loads((DOCS / 'publications.json').read_text())
     assert papers and len({p['id'] for p in papers}) == len(papers)
     for paper in papers:
+        assert paper['researchArea'] in {'ai4or', 'data-mining'}
+        assert paper['topics'] and all(isinstance(topic, str) and topic for topic in paper['topics'])
         assert paper['status'] in {'published', 'review'}
         if paper['status'] == 'review':
             assert re.fullmatch(r'https://arxiv\.org/abs/\d{4}\.\d{4,5}(?:v\d+)?', paper['url'])
@@ -64,6 +67,8 @@ def main():
     stats = json.loads((DOCS / 'scholar-stats.json').read_text())
     assert stats['authorId'] == 'm5u8VlIAAAAJ'
     assert type(stats['totalCitations']) is int and stats['totalCitations'] >= 0
+    homepage = (DOCS / 'index.html').read_text()
+    assert html_citation_snapshot(homepage, stats) == homepage, 'HTML citation fallback differs from the JSON snapshot'
     print(f'Public assets resolved; {len(papers)} public publications validated.')
 
 
