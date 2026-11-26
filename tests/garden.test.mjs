@@ -90,28 +90,36 @@ test('a lost write response is not blindly retried and cannot inflate the total'
     return response;
   };
   const counter = createGardenCounter({hostname, storage, fetcher});
-  assert.equal((await counter.refresh('visit')).visitors.stale, true);
+  assert.deepEqual((await counter.refresh('visit')).visitors, {value:1, confirmed:false});
   assert.equal((await counter.refresh('visit')).visitors.value, 1);
   await counter.refresh('water');
   assert.equal(service.calls.filter(c => c.operation === 'hit').length, 1);
   assert.equal(JSON.parse(storage.getItem(prefix + 'visitors')).state, 'pending');
 });
-test('network or malformed responses retain the last good value and timestamp', async () => {
+test('offline browsers never display their different cached totals', async () => {
   const service = backend(), storage = memory();
-  const options = {hostname,storage,fetcher:service.fetcher};
-  const original = await createGardenCounter(options).refresh('water');
-  for (const fetcher of [async()=>{throw new Error('offline')}, async()=>({ok:true,json:async()=>({value:-2})}), async()=>({ok:true,json:async()=>({value:'100'})})]) {
-    const data = await createGardenCounter({...options,fetcher}).refresh();
-    assert.equal(data.waterers.value, 1);
-    assert.equal(data.waterers.updated, original.waterers.updated);
-    assert.equal(data.waterers.stale, true);
+  const anotherStorage = memory();
+  storage.setItem(prefix + 'waterers:cache', JSON.stringify({value: 74, updated: '2026-11-25'}));
+  anotherStorage.setItem(prefix + 'waterers:cache', JSON.stringify({value: 76, updated: '2026-11-26'}));
+  for (const browserStorage of [storage, anotherStorage]) {
+    for (const fetcher of [async()=>{throw new Error('offline')}, async()=>({ok:true,json:async()=>({value:-2})}), async()=>({ok:true,json:async()=>({value:'100'})})]) {
+      const data = await createGardenCounter({hostname, storage:browserStorage, fetcher}).refresh();
+      assert.equal(data.waterers.value, null);
+    }
   }
+  service.counts.set('garden-20261009-waterers', 77);
+  for (const browserStorage of [storage, anotherStorage]) {
+    const counter = createGardenCounter({hostname, storage:browserStorage, fetcher:service.fetcher});
+    assert.equal((await counter.refresh()).waterers.value, 77);
+  }
+  assert(service.calls.every(c => c.operation === 'get'));
 });
-test('only an explicit missing-key response is a legitimate zero', async () => {
-  const counter = createGardenCounter({hostname, storage:memory(), fetcher:async()=>({ok:false,status:404,json:async()=>({error:'Unknown route'})})});
-  const data = await counter.refresh();
-  assert.equal(data.visitors.value,undefined);
-  assert.equal(data.visitors.stale,true);
+test('missing established production keys do not look like a reset to zero', async () => {
+  const service = backend();
+  const counter = createGardenCounter({hostname, storage:memory(), fetcher:service.fetcher});
+  assert.equal((await counter.refresh()).visitors.value, null);
+  const preview = createGardenCounter({hostname:'localhost', storage:memory(), fetcher:service.fetcher});
+  assert.equal((await preview.refresh()).visitors.value, 0);
 });
 test('visits and watering each count again after thirty minutes', async () => {
   const service = backend(), storage = memory();

@@ -17,11 +17,13 @@ test('every public paper has one research area and supported, nonduplicated tags
 });
 
 test('area filters partition papers; LLM/MLLM combines both models without rewriting paper tags', () => {
-  assert.deepEqual(papers.filter(p => matchesResearchFilter(p, 'area:ai4or')).map(p => p.id).sort(), ['p1', 'p2', 'p3', 'p5', 'p6']);
-  assert.equal(papers.filter(p => matchesResearchFilter(p, 'area:data-mining')).length, papers.length - 5);
+  const ai4or = papers.filter(p => matchesResearchFilter(p, 'area:ai4or'));
+  assert.deepEqual(ai4or.map(p => p.id).sort(), ['p1', 'p2', 'p22', 'p23', 'p3', 'p5', 'p6']);
+  assert.equal(papers.filter(p => matchesResearchFilter(p, 'area:data-mining')).length, papers.length - ai4or.length);
   const original = JSON.stringify(papers);
+  const modelPapers = papers.filter(p => p.topics.some(topic => ['LLM', 'MLLM'].includes(topic)));
   for (const filter of ['LLM/MLLM', 'LLM', 'MLLM']) {
-    assert.equal(papers.filter(p => matchesResearchFilter(p, filter)).length, 5);
+    assert.deepEqual(papers.filter(p => matchesResearchFilter(p, filter)), modelPapers);
   }
   assert.ok(papers.find(p => p.id === 'p2').topics.includes('MLLM'));
   assert.ok(papers.find(p => p.id === 'p1').topics.includes('LLM'));

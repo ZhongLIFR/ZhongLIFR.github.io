@@ -1,5 +1,59 @@
 [
   {
+    "id": "p21",
+    "venue": "Preprint",
+    "year": 2026,
+    "status": "review",
+    "topics": [
+      "Anomaly Detection",
+      "Diffusion/Flow Matching",
+      "Explainability"
+    ],
+    "authors": "Zhong Li, Qi Huang, Yuhang Wang, Yang Cao, Thomas Bäck, Niki van Stein, Matthijs van Leeuwen, and Lincen Yang",
+    "title": "Flow-CAD: Flow Matching for Contextual Anomaly Detection and Explanation in Tabular Data",
+    "outlet": "arXiv:2611.16184, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2611.16184",
+    "ranks": [],
+    "code": "https://github.com/ZhongLIFR/FlowCAD",
+    "presentation": "",
+    "summary": "Flow-CAD models how tabular measurements vary with their context using a single conditional flow. It scores deviations with normalized residuals and identifies the features that contribute to an anomaly. The study analyzes the stability of the score and evaluates the approach on 20 datasets.",
+    "summarySource": "https://arxiv.org/abs/2611.16184",
+    "researchArea": "data-mining",
+    "citations": {
+      "count": 0,
+      "source": "Google Scholar",
+      "snapshot": "2026-11-26"
+    }
+  },
+  {
+    "id": "p22",
+    "venue": "Preprint",
+    "year": 2026,
+    "status": "review",
+    "topics": [
+      "LLM",
+      "Optimization Modeling",
+      "Hallucination Repair"
+    ],
+    "authors": "Jiageng Wu, Chao Shen, Zihan Guo, Junyan Shao, Zongyan Zhang, Jie Song, Zhong Li, and Mingyang Sun",
+    "title": "Fix What's Wrong, Keep What's Right: Hallucination Repair for LLM-Based Optimization Modeling",
+    "outlet": "arXiv:2610.12529, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2610.12529",
+    "ranks": [],
+    "code": "",
+    "presentation": "",
+    "summary": "OPT-Kraken checks whether a generated optimization model reflects the original requirements and whether its code and data agree with that model. It uses the evidence to decide what to repair and to limit edits so that correct parts of the formulation and code are preserved. The framework requires no additional training.",
+    "summarySource": "https://arxiv.org/abs/2610.12529",
+    "researchArea": "ai4or",
+    "citations": {
+      "count": 0,
+      "source": "Google Scholar",
+      "snapshot": "2026-11-26"
+    }
+  },
+  {
     "id": "p5",
     "venue": "Preprint",
     "year": 2026,
@@ -30,10 +84,36 @@
     "citations": {
       "count": 0,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:NMlhSUseqAsC"
     },
     "researchArea": "ai4or"
+  },
+  {
+    "id": "p23",
+    "venue": "Preprint",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "LLM",
+      "Post-Training"
+    ],
+    "authors": "Zhao Yang, Yuxuan Jiang, Ting-Chih Chen, Lincen Yang, Annie Wong, Chao Gao, Jacob E. Kooi, Zhong Li, Jiayang Shi, Kevin Qiu, Qi Huang, Xinrui Zu, Shiping Yang, Hengyuan Zhang, Ngai Wong, Filip Ilievski, Shujian Yu, Aske Plaat, Zhaochun Ren, Mark Hoogendoorn, and Vincent François-Lavet",
+    "title": "Modularized Reinforcement Learning on LLMs: From MDP Creation to Exploration and Learning",
+    "outlet": "arXiv:2606.21943, 2026",
+    "note": "",
+    "url": "https://arxiv.org/abs/2606.21943",
+    "ranks": [],
+    "code": "",
+    "presentation": "",
+    "summary": "This survey examines design choices in reinforcement learning for language model post-training, from defining the decision process to exploring responses and updating the model. Comparing current practice with classical reinforcement learning highlights alternatives such as value-based methods and off-policy actor-critic training.",
+    "summarySource": "https://arxiv.org/abs/2606.21943",
+    "researchArea": "ai4or",
+    "citations": {
+      "count": 2,
+      "source": "Google Scholar",
+      "snapshot": "2026-11-26"
+    }
   },
   {
     "id": "p6",
@@ -54,9 +134,9 @@
     "url": "https://arxiv.org/abs/2605.11738",
     "ranks": [],
     "citations": {
-      "count": 7,
+      "count": 10,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:-yGd096yOn8C"
     },
     "presentation": "",
@@ -79,9 +159,9 @@
     "url": "https://arxiv.org/abs/2502.17119",
     "ranks": [],
     "citations": {
-      "count": 35,
+      "count": 42,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:AzKEL7Gb_04C"
     },
     "code": "https://github.com/Diffusion-Model-Leiden/awesome-diffusion-models-for-tabular-data",
@@ -109,7 +189,7 @@
     "citations": {
       "count": 11,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:1tZ8xJnm2c8C"
     },
     "code": "https://github.com/ZhongLIFR/GXAttack",
@@ -139,7 +219,7 @@
     "citations": {
       "count": 2,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:NxmKEeNBbOMC"
     },
     "summary": "MM-OptBench tests optimization modeling from text together with tables, graphs, maps, schedules, and other visual inputs. Its 780 solver-verified instances cover six optimization families and three difficulty levels. Each instance includes a mathematical formulation and executable reference solution, allowing evaluation of both information extraction and the correctness of the resulting optimization model.",
@@ -165,7 +245,7 @@
       "Post-Training"
     ],
     "authors": "Hongliang Lu#, Zhong Li#, Yuxuan Chen, Yuan Lan, Fan Zhang, and Zaiwen Wen",
-    "title": "PEARL: Interactive Optimization Modeling with Tool-Integrated Agentic Reinforcement Learning",
+    "title": "PEARL: Solver-in-the-Loop Interactive Optimization Modeling from Natural Language",
     "outlet": "Proceedings of the 40th Conference on Neural Information Processing Systems, 2026",
     "note": "",
     "url": "https://arxiv.org/abs/2607.18256",
@@ -175,7 +255,7 @@
     "citations": {
       "count": 1,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:CNPyR2KL9-0C"
     },
     "summary": "PEARL trains optimization-modeling agents to work through repeated execution and revision. The agent can run Python, invoke mathematical solvers, inspect feasibility and diagnostic feedback, and revise its formulation or code before answering. Tool-integrated reinforcement learning improves verified solving performance over one-shot generation and other evaluated baselines.",
@@ -215,7 +295,12 @@
         "url": "https://openreview.net/forum?id=dQ36O5uJBs"
       }
     ],
-    "researchArea": "data-mining"
+    "researchArea": "data-mining",
+    "citations": {
+      "count": 0,
+      "source": "Google Scholar",
+      "snapshot": "2026-11-26"
+    }
   },
   {
     "id": "p10",
@@ -242,7 +327,41 @@
         "url": "https://openreview.net/forum?id=rheTYmImAU"
       }
     ],
-    "researchArea": "data-mining"
+    "researchArea": "data-mining",
+    "citations": {
+      "count": 0,
+      "source": "Google Scholar",
+      "snapshot": "2026-11-26"
+    }
+  },
+  {
+    "id": "p24",
+    "venue": "MICCAI",
+    "year": 2026,
+    "status": "published",
+    "topics": [
+      "Diffusion/Flow Matching",
+      "Healthcare"
+    ],
+    "authors": "Jiayang Shi, Lincen Yang, Zhong Li, Tristan van Leeuwen, Daniël M. Pelt, and K. Joost Batenburg",
+    "title": "Efficient Flow Matching for Sparse-View CT Reconstruction",
+    "outlet": "Medical Image Computing and Computer Assisted Intervention – MICCAI 2026, LNCS 16888, pp. 156–166, 2026",
+    "note": "",
+    "url": "https://papers.miccai.org/miccai-2026/0340-Paper3850.html",
+    "pdf": "https://papers.miccai.org/miccai-2026/paper/3850_paper.pdf",
+    "ranks": [
+      "CCF B"
+    ],
+    "code": "https://github.com/EFMCT/EFMCT",
+    "presentation": "",
+    "summary": "The authors use flow matching to reconstruct CT images from sparse views. Their efficient variant reuses estimated velocities across nearby steps, reducing neural network evaluations while maintaining measurement consistency. Experiments compare reconstruction quality and computational cost with diffusion-based methods.",
+    "summarySource": "https://papers.miccai.org/miccai-2026/0340-Paper3850.html",
+    "researchArea": "data-mining",
+    "citations": {
+      "count": 0,
+      "source": "Google Scholar",
+      "snapshot": "2026-11-26"
+    }
   },
   {
     "id": "p3",
@@ -256,29 +375,34 @@
     ],
     "authors": "Zhong Li#, Hongliang Lu#, Tao Wei#, Yuxuan Chen#, Wenyu Liu, Yuan Lan, Fan Zhang, and Zaiwen Wen",
     "title": "Constructing Industrial-Scale Optimization Modeling Benchmark",
-    "outlet": "Proceedings of the 43rd International Conference on Machine Learning, PMLR, 2026",
+    "outlet": "Proceedings of the 43rd International Conference on Machine Learning, PMLR 306, pp. 68993–69036, 2026",
     "note": "",
-    "url": "https://arxiv.org/abs/2602.10450",
+    "url": "https://proceedings.mlr.press/v306/li26dz.html",
     "ranks": [
       "CCF A"
     ],
     "citations": {
-      "count": 13,
+      "count": 16,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:c1e4I3QdEKYC"
     },
     "code": "https://github.com/optsuite/MIPLIB-NL",
     "summary": "MIPLIB-NL brings industrial-scale optimization into language-model evaluation. A structure-aware reverse-construction process produces 223 natural-language reconstructions of real mixed-integer linear programs from MIPLIB 2017. Expert review and reconstruction checks preserve their mathematical content, revealing modeling failures that are difficult to detect with smaller or synthetic benchmarks.",
     "presentation": "Poster",
-    "summarySource": "https://arxiv.org/abs/2602.10450",
+    "summarySource": "https://proceedings.mlr.press/v306/li26dz.html",
     "resources": [
       {
         "label": "Data",
         "url": "https://github.com/optsuite/MIPLIB-NL/tree/main/dataset"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.10450"
       }
     ],
-    "researchArea": "ai4or"
+    "researchArea": "ai4or",
+    "pdf": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26dz/li26dz.pdf"
   },
   {
     "id": "p11",
@@ -297,9 +421,9 @@
       "CCF A"
     ],
     "citations": {
-      "count": 2,
+      "count": 3,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:MIg0yeAD4ggC"
     },
     "code": "https://github.com/ylincen/causal-subgroup",
@@ -326,30 +450,35 @@
     ],
     "authors": "Zhong Li, Jiayang Shi, and Matthijs van Leeuwen",
     "title": "Graph Neural Networks based Log Anomaly Detection and Explanation",
-    "outlet": "Data Mining and Knowledge Discovery, 2026",
+    "outlet": "Data Mining and Knowledge Discovery, 40(5), article 66, 2026",
     "note": "",
-    "url": "https://arxiv.org/abs/2307.00527",
+    "url": "https://link.springer.com/article/10.1007/s10618-026-01235-6",
     "ranks": [
       "CORE A",
       "CCF B"
     ],
     "citations": {
-      "count": 90,
+      "count": 97,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:H_jBuBxbQIAC"
     },
     "code": "https://github.com/ZhongLIFR/Logs2Graph",
     "presentation": "",
     "summary": "Logs2Graphs converts event logs into attributed, directed, weighted graphs to capture relationships beyond event counts or sequences. A one-class graph neural network learns representations for detecting anomalous log groups. For each detected anomaly, the method also identifies influential nodes as an explanation, providing clues for subsequent root-cause analysis.",
-    "summarySource": "https://arxiv.org/abs/2307.00527",
+    "summarySource": "https://link.springer.com/article/10.1007/s10618-026-01235-6",
     "resources": [
       {
         "label": "Data",
         "url": "https://doi.org/10.5281/zenodo.7771548"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2307.00527"
       }
     ],
-    "researchArea": "data-mining"
+    "researchArea": "data-mining",
+    "pdf": "https://link.springer.com/content/pdf/10.1007/s10618-026-01235-6.pdf"
   },
   {
     "id": "p4",
@@ -370,9 +499,9 @@
       "CCF A"
     ],
     "citations": {
-      "count": 22,
+      "count": 26,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:-6RzNnnwWf8C"
     },
     "code": "https://github.com/ZhongLIFR/TCCM-NIPS",
@@ -401,7 +530,7 @@
       "Graph Learning"
     ],
     "authors": "Zhong Li, Yuhang Wang, and Matthijs van Leeuwen",
-    "title": "Automated Self-Supervised Learning for Graph Anomaly Detection",
+    "title": "Towards Automated Self-Supervised Learning for Truly Unsupervised Graph Anomaly Detection",
     "outlet": "Data Mining and Knowledge Discovery, 2025",
     "note": "",
     "url": "https://link.springer.com/article/10.1007/s10618-025-01115-5",
@@ -410,9 +539,9 @@
       "CCF B"
     ],
     "citations": {
-      "count": 5,
+      "count": 7,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:T_ojBgVMvoEC"
     },
     "code": "https://github.com/ZhongLIFR/AutoGAD2024",
@@ -420,7 +549,13 @@
     "summary": "AutoGAD addresses hidden label leakage when selecting self-supervised strategies and hyperparameters for supposedly unsupervised graph anomaly detection. It uses an internal evaluation criterion to select configurations without ground-truth anomaly labels. Experiments with ten graph anomaly detectors assess both the impact of label-guided selection and the effectiveness of the proposed alternative.",
     "summarySource": "https://link.springer.com/article/10.1007/s10618-025-01115-5",
     "pdf": "https://link.springer.com/content/pdf/10.1007/s10618-025-01115-5.pdf",
-    "researchArea": "data-mining"
+    "researchArea": "data-mining",
+    "resources": [
+      {
+        "label": "AAAI 2026 abstract reprint",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41387/45348"
+      }
+    ]
   },
   {
     "id": "p14",
@@ -442,7 +577,7 @@
     "citations": {
       "count": 16,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:eGYfIraVYiQC"
     },
     "code": "https://github.com/ZhongLIFR/ARMET/",
@@ -475,9 +610,9 @@
       "CCF B"
     ],
     "citations": {
-      "count": 336,
+      "count": 362,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:-DxkuPiZhfEC"
     },
     "presentation": "",
@@ -505,9 +640,9 @@
       "CCF B"
     ],
     "citations": {
-      "count": 57,
+      "count": 58,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:YlPif8NxrbYC"
     },
     "code": "https://github.com/ZhongLIFR/QCAD",
@@ -535,7 +670,7 @@
     "citations": {
       "count": 21,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:X9ykpCP0fEIC"
     },
     "presentation": "",
@@ -559,9 +694,9 @@
     "url": "https://journals.sagepub.com/doi/full/10.1177/17407745211053790",
     "ranks": [],
     "citations": {
-      "count": 13,
+      "count": 14,
       "source": "Google Scholar",
-      "snapshot": "2026-10-13",
+      "snapshot": "2026-11-26",
       "scholarId": "m5u8VlIAAAAJ:qwy9JoKyICEC"
     },
     "presentation": "",

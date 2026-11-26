@@ -1,4 +1,4 @@
-import { isPublicPaper, isSelectedPaper, publicPaper, presentationFor, citationFor, resourceLinksFor } from './publication-metadata.js?v=paper-resources-20261008';
+import { isPreprint, isPublicPaper, isSelectedPaper, publicPaper, presentationFor, citationFor, resourceLinksFor } from './publication-metadata.js?v=20261126';
 import { researchAreas, topicGroup, matchesResearchFilter, researchFilterGroups } from './research-taxonomy.js?v=20261013';
 const $ = (selector) => document.querySelector(selector);
 const escape = (value) => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,16 +16,21 @@ function renderTopicOptions(){
 function formatAuthors(authors){return escape(authors).replace(/Zhong Li/g,'<strong>Zhong Li</strong>').replace(/([#*])/g,'<sup>$1</sup>');}
 function compactMetadata(p){
  const ranks=p.status==='published'?(p.ranks||[]):[];
- const rankTags=ranks.map(rank=>`<span class="rank-tag" data-rank="${escape(rank)}" title="${escape(rank)} · venue ranking in the CV">${escape(rank)}</span>`).join('');
+ const rankTags=ranks.map(rank=>`<span class="rank-tag" data-rank="${escape(rank)}" title="${escape(rank)} · venue ranking">${escape(rank)}</span>`).join('');
  const citation=p.citations;
  const scholarUrl=citation?.scholarId && /^m5u8VlIAAAAJ:[A-Za-z0-9_-]+$/.test(citation.scholarId)?`https://scholar.google.com/citations?view_op=view_citation&user=m5u8VlIAAAAJ&citation_for_view=${encodeURIComponent(citation.scholarId)}`:`https://scholar.google.com/scholar?q=${encodeURIComponent(p.title)}`;
  const citationSource=escape(citation?.source || 'Google Scholar');
  const count=Number.isInteger(citation?.count)&&citation.count>=0?`<a class="citation-tag" href="${escape(scholarUrl)}" target="_blank" rel="noopener" title="Google Scholar citations: ${citation.count} · ${citationSource} · ${escape(citation.snapshot)}" aria-label="${citation.count} Google Scholar citations, snapshot ${escape(citation.snapshot)}; find this paper on Google Scholar"><span class="scholar-mark" aria-hidden="true"><img src="assets/icons/google-scholar.png" alt="" width="14" height="14"></span><span>${citation.count}</span></a>`:'';
  return rankTags||count?`<div class="paper-metrics">${rankTags}${count}</div>`:'';
 }
+function matchesStatus(paper, status) {
+ if (status === 'all') return true;
+ if (status === 'preprint') return isPreprint(paper);
+ return paper.status === status;
+}
 function render(){
  const q=state.query.trim().toLowerCase();
- const filtered=papers.filter(p=>(state.collection==='all'||isSelectedPaper(p))&&matchesResearchFilter(p,state.topic)&&(state.status==='all'||p.status===state.status)&&(!q||[p.title,p.authors,p.venue,p.year,presentationFor(p),researchAreas.find(area=>area.id===p.researchArea)?.fullLabel,...p.topics.map(topicGroup),...p.topics].join(' ').toLowerCase().includes(q)));
+ const filtered=papers.filter(p=>(state.collection==='all'||isSelectedPaper(p))&&matchesResearchFilter(p,state.topic)&&matchesStatus(p,state.status)&&(!q||[p.title,p.authors,p.venue,p.year,presentationFor(p),researchAreas.find(area=>area.id===p.researchArea)?.fullLabel,...p.topics.map(topicGroup),...p.topics].join(' ').toLowerCase().includes(q)));
  document.querySelectorAll('[data-collection]').forEach(b=>{const active=b.dataset.collection===state.collection;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',active);b.querySelector('span').textContent=b.dataset.collection==='all'?papers.length:papers.filter(isSelectedPaper).length});
  $('#show-all-papers').innerHTML=`View all ${papers.length} papers <span>↓</span>`;
  $('#topic-filter').value=state.topic;
@@ -33,7 +38,7 @@ function render(){
  $('#show-all-papers').hidden=state.collection==='all';
  let currentYear=null;
  $('#paper-list').innerHTML=filtered.map(p=>{
-  const heading=p.status==='review'?'Preprints':p.year || 'Publications';
+  const heading=isPreprint(p)?'Preprints':p.year || 'Publications';
   let year='';if(heading!==currentYear){currentYear=heading;year=`<h3 class="paper-year">${heading}</h3>`;}
   const presentation=presentationFor(p);
   const recognition=p.status==='published'&&/highly cited/i.test(p.note)?'Highly cited':'';

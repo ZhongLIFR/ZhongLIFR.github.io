@@ -1,8 +1,10 @@
 // Unpublished entries expose only preprint metadata and a generic review status.
 // Reconstruct these fields from the public URL, never from a submission target.
+export const isPreprint = paper => paper.status === 'review' || paper.status === 'preprint';
+
 export function isPublicPaper(paper) {
   return paper.status === 'published' || (
-    paper.status === 'review' && /^https?:\/\/(?:www\.)?arxiv\.org\/(?:abs|pdf)\/\d{4}\.\d{4,5}(?:v\d+)?(?:\.pdf)?(?:[?#].*)?$/.test(paper.url || '')
+    isPreprint(paper) && /^https?:\/\/(?:www\.)?arxiv\.org\/(?:abs|pdf)\/\d{4}\.\d{4,5}(?:v\d+)?(?:\.pdf)?(?:[?#].*)?$/.test(paper.url || '')
   );
 }
 
@@ -15,7 +17,7 @@ export function isSelectedPaper(paper) {
 }
 
 export function publicPaper(paper) {
-  if (paper.status !== 'review') return paper;
+  if (!isPreprint(paper)) return paper;
   const arxiv = paper.url?.match(/arxiv\.org\/(?:abs|pdf)\/(\d{4}\.\d{4,5})(?:v\d+)?/)?.[1];
   const year = arxiv ? 2000 + Number(arxiv.slice(0, 2)) : null;
   return {
@@ -56,14 +58,14 @@ export function resourceLinksFor(paper) {
 export function citationFor(rawPaper) {
   const p = publicPaper(rawPaper);
   const journal = ['DMKD', 'TKDE', 'TKDD', 'Clinical Trials', 'KDD Explor.', 'JHRI'].includes(p.venue);
-  const type = p.status === 'review' ? 'misc' : journal ? 'article' : 'inproceedings';
+  const type = isPreprint(p) ? 'misc' : journal ? 'article' : 'inproceedings';
   const authors = p.authors.replace(/[#*]/g, '').replace(/, and /g, ', ').replace(/ and /g, ', ').split(', ').map(s => s.trim()).filter(Boolean).join(' and ');
   const fields = [`  title = {${p.title}}`, `  author = {${authors}}`];
   if (p.year) fields.push(`  year = {${p.year}}`);
   if (p.status === 'published') {
     fields.push(`  ${journal ? 'journal' : 'booktitle'} = {${p.outlet.replace(/, (20\d\d)$/, '')}}`);
   } else {
-    fields.push('  note = {Under review}');
+    if (p.status === 'review') fields.push('  note = {Under review}');
     const arxiv = p.url?.match(/arxiv\.org\/(?:abs|pdf)\/(\d{4}\.\d{4,5})(?:v\d+)?/)?.[1];
     if (arxiv) fields.push(`  eprint = {${arxiv}}`, '  archivePrefix = {arXiv}');
   }

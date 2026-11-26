@@ -56,8 +56,8 @@ def main():
     for paper in papers:
         assert paper['researchArea'] in {'ai4or', 'data-mining'}
         assert paper['topics'] and all(isinstance(topic, str) and topic for topic in paper['topics'])
-        assert paper['status'] in {'published', 'review'}
-        if paper['status'] == 'review':
+        assert paper['status'] in {'published', 'review', 'preprint'}
+        if paper['status'] != 'published':
             assert re.fullmatch(r'https://arxiv\.org/abs/\d{4}\.\d{4,5}(?:v\d+)?', paper['url'])
             assert paper['venue'] == 'Preprint' and not paper.get('ranks') and not paper.get('presentation')
         citation = paper.get('citations')

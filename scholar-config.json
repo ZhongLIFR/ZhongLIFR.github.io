@@ -4,10 +4,10 @@
   "minimum_matches": 3,
   "title_aliases": {
     "p1": [
-      "PEARL: Solver-in-the-Loop Interactive Optimization Modeling from Natural Language"
+      "PEARL: Interactive Optimization Modeling with Tool-Integrated Agentic Reinforcement Learning"
     ],
     "p13": [
-      "Towards automated self-supervised learning for truly unsupervised graph anomaly detection"
+      "Automated Self-Supervised Learning for Graph Anomaly Detection"
     ]
   }
 }

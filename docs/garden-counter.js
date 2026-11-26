@@ -13,12 +13,18 @@ export function createGardenCounter({hostname, storage, fetcher = fetch, locks =
   } catch { /* Without storage, read totals without repeatedly counting. */ }
   let queue = Promise.resolve();
 
-  function cached(kind) {
-    try {
-      const item = JSON.parse(storage.getItem(prefix + kind + ':cache'));
-      if (Number.isSafeInteger(item?.value) && item.value >= 0 && typeof item.updated === 'string') return item;
-    } catch { /* No usable snapshot. */ }
-    return null;
+  async function requestCount(kind, operation) {
+    const url = `https://abacus.jasoncameron.dev/${operation}/${namespace}/${scope}-${kind}`;
+    const response = await fetcher(url, {
+      cache: 'no-store', credentials: 'omit', referrerPolicy: 'no-referrer',
+      signal: AbortSignal.timeout(10000)
+    });
+    const data = await response.json();
+    // Only an unused preview counter can start at zero.
+    if (hostname !== namespace && operation === 'get' && response.status === 404 && data.error === 'Key not found') return 0;
+    if (!response.ok) throw new Error('Counter service unavailable');
+    if (!Number.isSafeInteger(data.value) || data.value < 0) throw new Error('Invalid counter response');
+    return data.value;
   }
 
   async function read(kind, record) {
@@ -34,21 +40,16 @@ export function createGardenCounter({hostname, storage, fetcher = fetch, locks =
     // The public increment endpoint has no idempotency token. Save intent first
     // and never blindly repeat a write after a timeout or lost response.
     if (increment) saveFlag('pending');
-    const operation = increment ? 'hit' : 'get';
-    const url = `https://abacus.jasoncameron.dev/${operation}/${namespace}/${scope}-${kind}`;
-    const response = await fetcher(url, {
-      cache: 'no-store', credentials: 'omit', referrerPolicy: 'no-referrer',
-      signal: AbortSignal.timeout(10000)
-    });
-    const data = await response.json();
-    const missing = !increment && response.status === 404 && data.error === 'Key not found';
-    if (!response.ok && !missing) throw new Error('Counter service unavailable');
-    const value = missing ? 0 : data.value;
-    if (!Number.isSafeInteger(value) || value < 0) throw new Error('Invalid counter response');
+    let value;
+    try {
+      value = await requestCount(kind, increment ? 'hit' : 'get');
+    } catch (error) {
+      if (!increment) throw error;
+      // A lost response may still have incremented the counter. Only read it back.
+      return {value: await requestCount(kind, 'get'), confirmed: false};
+    }
     if (increment) saveFlag('done');
-    const result = {value, updated: new Date(now()).toISOString(), confirmed: increment || confirmed};
-    try { storage.setItem(prefix + kind + ':cache', JSON.stringify(result)); } catch { /* Display the live count. */ }
-    return result;
+    return {value, confirmed: increment || confirmed};
   }
 
   async function update(action) {
@@ -56,15 +57,14 @@ export function createGardenCounter({hostname, storage, fetcher = fetch, locks =
     for (const kind of ['visitors', 'waterers']) {
       // Register a watering only after this browser's visit was acknowledged.
       const record = kind === 'visitors' ? Boolean(action) : action === 'water' && result.visitors?.confirmed;
-      try { result[kind] = {...await read(kind, record), stale: false}; }
-      catch { result[kind] = {...cached(kind), stale: true, confirmed: false}; }
+      try { result[kind] = await read(kind, record); }
+      catch { result[kind] = {value: null, confirmed: false}; }
     }
     return result;
   }
 
   return {
     preview: hostname !== namespace,
-    cached,
     refresh(action) {
       const run = () => locks?.request ? locks.request(prefix + 'lock', () => update(action)) : update(action);
       const job = queue.then(run, run);

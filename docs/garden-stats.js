@@ -1,4 +1,4 @@
-import {createGardenCounter} from './garden-counter.js?v=shared-counts-20261009';
+import {createGardenCounter} from './garden-counter.js?v=20261126';
 
 const stats = document.querySelector('.garden-stats');
 if (stats) {
@@ -6,30 +6,37 @@ if (stats) {
   try { storage = localStorage; } catch { /* Read-only counts still work. */ }
   const counter = createGardenCounter({hostname: location.hostname, storage});
   const formatter = new Intl.NumberFormat('en-US');
-  const explanation = 'Visitors counts visits and Watered by counts completed watering contributions, each at most once per browser every 30 minutes. The two counters use separate timers. Counts started in October 2026. Clearing browser data or using another browser may count again. Shared totals provided by Abacus.';
+  const explanation = 'Shared totals refresh every minute while this page is visible. Visits and completed waterings each count at most once per browser every 30 minutes, using separate timers.';
   const preview = counter.preview ? 'Preview counters, separate from the live website. ' : '';
   function display(data) {
-    let stale = false;
+    let unavailable = false;
     for (const kind of ['waterers', 'visitors']) {
       const item = data[kind];
       const element = stats.querySelector(`[data-count="${kind}"]`);
       const valid = Number.isSafeInteger(item?.value);
-      element.textContent = valid ? formatter.format(item.value) : '—';
-      element.title = item?.stale ? (valid ? `Last available count: ${new Date(item.updated).toLocaleString()}` : 'Temporarily unavailable') : '';
-      stale ||= Boolean(item?.stale);
+      const label = valid ? formatter.format(item.value) : '—';
+      if (element.textContent !== label) element.textContent = label;
+      element.title = valid ? '' : 'Shared count temporarily unavailable';
+      unavailable ||= !valid;
     }
-    stats.dataset.state = stale ? 'stale' : 'ready';
-    stats.title = preview + explanation + (stale ? ' The service is temporarily unavailable; any displayed numbers are the last successful readings.' : '');
+    stats.dataset.state = unavailable ? 'unavailable' : 'ready';
+    stats.title = preview + explanation;
   }
-  display(Object.fromEntries(['waterers', 'visitors'].map(kind => [kind, {...counter.cached(kind), stale: true}])));
-  let lastRefresh = 0;
   async function refresh(action) {
-    lastRefresh = Date.now();
     display(await counter.refresh(action));
   }
   document.addEventListener('garden:watered', () => { void refresh('water'); });
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden && Date.now() - lastRefresh > 60000) void refresh('visit');
+    if (!document.hidden) void refresh('visit');
   });
+  window.addEventListener('pageshow', event => {
+    if (event.persisted && !document.hidden) void refresh('visit');
+  });
+  window.addEventListener('online', () => {
+    if (!document.hidden) void refresh();
+  });
+  setInterval(() => {
+    if (!document.hidden) void refresh();
+  }, 60_000);
   void refresh('visit');
 }
