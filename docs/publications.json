@@ -36,7 +36,7 @@
       "Optimization Modeling",
       "Hallucination Repair"
     ],
-    "authors": "Jiageng Wu, Chao Shen, Zihan Guo, Junyan Shao, Zongyan Zhang, Jie Song, Zhong Li, and Mingyang Sun",
+    "authors": "Jiageng Wu, Chao Shen, Zihan Guo, Junyan Shao, Zongyan Zhang, Jie Song, Zhong Li*, and Mingyang Sun*",
     "title": "Fix What's Wrong, Keep What's Right: Hallucination Repair for LLM-Based Optimization Modeling",
     "outlet": "arXiv:2610.12529, 2026",
     "note": "",
